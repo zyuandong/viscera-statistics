@@ -1,12 +1,12 @@
 const Path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 
 const config = {
-  target: 'web',
-  entry: Path.join(__dirname, 'index.js'),
+  entry: Path.join(__dirname, './src/index.js'),
   output: {
     filename: 'bundle.js',
     path: Path.join(__dirname, 'dist')
@@ -14,21 +14,20 @@ const config = {
 
   module: {
     rules: [{
-      test: /\.js$/,
-      loader: 'babel-loader'
+      test: /\.vue$/,
+      use: 'vue-loader'
     },{
       test: /\.scss$/,
       use: [
         'style-loader',
         'css-loader',
+        {
+          loader: 'postcss-loader',
+          options: {
+            sourceMap: true
+          }
+        },
         'sass-loader'
-      ]
-    },{
-      test: /\.less$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'less-loader'
       ]
     },{
       test: /\.(gif|png|jpg|jpeg|svg)$/,
@@ -36,7 +35,7 @@ const config = {
         loader: 'url-loader',
         options: {
           limit: 1024,
-          name: '[name]-aaa.[ext]'
+          name: 'icon-[name].[ext]'
         }
       }]
     }]
@@ -46,18 +45,20 @@ const config = {
     /**
      * TODO
      */
-    new Webpack.DefinePlugin({
+    /*new Webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: isDev ? '"development"' : '"production"'
       }
-    }),
-    new HtmlWebpackPlugin({
-      template: __dirname + "/src/templates/index.tmpl.html" //new 一个这个插件的实例，并传入相关的参数
-    })
+    }),*/
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin()
+    /*new HtmlWebpackPlugin({
+      : __dirname + "/src/s/index.tmpl.html" //new 一个这个插件的实例，并传入相关的参数
+    })*/
   ]
 };
 
-if (isDev) {
+if (true) {
   /**
    * source-map                    完整、慢
    * cheap-module-source-map       不带列映射、较快
@@ -72,14 +73,13 @@ if (isDev) {
    */
   config.devServer = {
     port: 8081,
-    inline: true,
+    //inline: true,
     open: true,
-    hot: true,
-    historyApiFallback: true
+    //hot: true,
+    //historyApiFallback: true
   };
   config.plugins.push(
-    new Webpack.HotModuleReplacementPlugin(),
-    new Webpack.NoEmitOnErrorsPlugin()
+    new Webpack.HotModuleReplacementPlugin()
   )
 }
 
