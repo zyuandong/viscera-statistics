@@ -1,5 +1,15 @@
 <template>
   <div id="app">
-    this is a first page
+    <Index></Index>
   </div>
 </template>
+
+<script>
+  import Index from './components/index.vue';
+
+  export default {
+    components: {
+      Index
+    }
+  }
+</script>
