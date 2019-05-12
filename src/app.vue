@@ -1,15 +1,11 @@
 <template>
   <div id="app">
-    <Index></Index>
+    <router-view name="fullScreen"></router-view>
   </div>
 </template>
 
 <script>
-  import Index from './components/index.vue';
-
   export default {
-    components: {
-      Index
-    }
+
   }
 </script>

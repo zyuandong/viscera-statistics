@@ -73,10 +73,15 @@ if (true) {
    */
   config.devServer = {
     port: 8081,
-    //inline: true,
+    inline: true,
     open: true,
-    //hot: true,
-    //historyApiFallback: true
+    hot: true,
+    historyApiFallback: true
+  };
+  config.resolve = {
+    alias: {
+      'vue$': 'vue/dist/vue'
+    }
   };
   config.plugins.push(
     new Webpack.HotModuleReplacementPlugin()
