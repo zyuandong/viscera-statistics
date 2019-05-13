@@ -1,6 +1,8 @@
 <template>
   <div id="index">
-    index
+    <router-link to="/menu">
+      <img src="../assets/images/logo.png" alt="">
+    </router-link>
   </div>
 </template>
 

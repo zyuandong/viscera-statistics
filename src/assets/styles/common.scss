@@ -6,7 +6,12 @@ html,body {
   bottom: 0;
   padding: 0;
   margin: 0;
+  color: #fff;
   background-color: #09111E;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 #container,#canvas {
   width: 100%;
