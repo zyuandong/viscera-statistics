@@ -8,8 +8,78 @@ html,body {
   margin: 0;
   color: #fff;
   background-color: #09111E;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
   a {
     color: #fff;
     text-decoration: none;
+  }
+
+  .block-c {
+    background-color: #ccc;
+  }
+  .block-d {
+    background-color: #ddd;
+  }
+  .block-a {
+    background-color: #aaa;
+  }
+
+  .pull-left {
+    float: left;
+  }
+
+  .width-4 {
+    width: 40%;
+  }
+
+  .width-6 {
+    width: 60%;
+  }
+
+  .main-box {
+    width: 90%;
+    border: 1px solid #000;
+    margin: 0 auto;
+  }
+
+  .p-10 {
+    padding: 10px;
+  }
+
+  .sub-title {
+    .main-text {
+      color: green;
+    }
+    .sub-title-line {
+      display: inline-block;
+      height: 13px;
+      background-image: url("./../images/sub-title-line.png");
+      background-repeat: no-repeat;
+      background-position: left bottom;
+
+      &.w-6 {
+        width: calc(100% - (96px + 6px));
+      }
+      &.w-8 {
+        width: calc(100% - (128px + 6px));
+      }
+      &.w-10 {
+        width: calc(100% - (160px + 6px));
+      }
+      &.w-11 {
+        width: calc(100% - (176px + 6px));
+      }
+      &.w-12 {
+        width: calc(100% - (192px + 6px));
+      }
+    }
   }
 }
