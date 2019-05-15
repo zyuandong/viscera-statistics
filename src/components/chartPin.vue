@@ -1,7 +1,7 @@
 <template>
   <div id="echart">
     <!--创建一个echarts的容器-->
-    <div id="echartContainer" style="width:500px; height:500px"></div>
+    <div :id="id" :style="{'width':width+'px', 'height':height+'px'}"></div>
   </div>
 </template>
 
@@ -9,9 +9,23 @@
   // const echarts = require('echarts');
   import echarts from 'echarts';
   export default {
+    props: {
+      id: {
+        type: String,
+        required: true
+      },
+      width: {
+        type: Number,
+        required: true
+      },
+      height: {
+        type: Number,
+        required: true
+      }
+    },
     mounted() {
       // 基于准备好的dom，初始化echarts实例
-      var myChart = echarts.init(document.getElementById('echartContainer'));
+      var myChart = echarts.init(document.getElementById(this.id));
       // 绘制图表
       myChart.setOption({
         title: { text: 'ECharts 入门示例' },

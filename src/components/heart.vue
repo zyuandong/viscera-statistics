@@ -7,7 +7,12 @@
           <div class="title-box">心脏数据</div>
         </div>
         <div class="main-box">
-          <ChartPin></ChartPin>
+          <!--:key 为此组件的特殊标识，不能用作向子组件传值-->
+          <ChartPin
+            :id="'chart1'"
+            :width = 200
+            :height = 200
+          ></ChartPin>
         </div>
 
         <div class="sub-title">
@@ -19,6 +24,25 @@
         <div class="sub-title">
           <span class="main-text">正常心率</span><span class="sub-text">统计</span>
           <span class="sub-title-line w-6"></span>
+        </div>
+
+        <div class="clearfix">
+          <div class="pull-left" style="height:10px;"></div>
+          <div class="pull-left">
+            <ChartPin
+              :id ="'chart2'"
+              :width = 200
+              :height = 200
+            ></ChartPin>
+          </div>
+          <div class="pull-left">
+            <ChartPin
+              :id = "'chart3'"
+              :width=200
+              :height=200
+            ></ChartPin>
+          </div>
+          <div class="pull-left"></div>
         </div>
 
         <div class="sub-title">
