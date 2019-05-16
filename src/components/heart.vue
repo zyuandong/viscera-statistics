@@ -8,11 +8,11 @@
         </div>
         <div class="main-box">
           <!--:key 为此组件的特殊标识，不能用作向子组件传值-->
-          <ChartPin
+          <ChartBar
             :id="'chart1'"
-            :width = 200
-            :height = 200
-          ></ChartPin>
+            :width = 500
+            :height = 500
+          ></ChartBar>
         </div>
 
         <div class="sub-title">
@@ -29,18 +29,18 @@
         <div class="clearfix">
           <div class="pull-left" style="height:10px;"></div>
           <div class="pull-left">
-            <ChartPin
+            <ChartBar
               :id ="'chart2'"
-              :width = 200
-              :height = 200
-            ></ChartPin>
+              :width = 300
+              :height = 300
+            ></ChartBar>
           </div>
           <div class="pull-left">
-            <ChartPin
+            <ChartBar
               :id = "'chart3'"
-              :width=200
-              :height=200
-            ></ChartPin>
+              :width=300
+              :height=300
+            ></ChartBar>
           </div>
           <div class="pull-left"></div>
         </div>
@@ -56,6 +56,12 @@
             :width=400
             :height=400
           ></ChartRadar>
+
+          <ChartPie
+            :id="'chart5'"
+            :width=400
+            :height=400
+          ></ChartPie>
         </div>
       </div>
     </div>
@@ -63,12 +69,14 @@
 </template>
 
 <script>
-  import ChartPin from './charts/chartPin.vue';
+  import ChartPie from './charts/chartPie.vue';
+  import ChartBar from './charts/chartBar.vue';
   import ChartRadar from './charts/chartRadar.vue';
 
   export default {
     components: {
-      ChartPin,
+      ChartPie,
+      ChartBar,
       ChartRadar,
     }
   }
