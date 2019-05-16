@@ -49,17 +49,27 @@
           <span class="main-text">可干预心脏疾病因素</span><span class="sub-text">调查</span>
           <span class="sub-title-line w-11"></span>
         </div>
+
+        <div class="clearfix">
+          <ChartRadar
+            :id="'chart4'"
+            :width=400
+            :height=400
+          ></ChartRadar>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import ChartPin from './chartPin.vue';
+  import ChartPin from './charts/chartPin.vue';
+  import ChartRadar from './charts/chartRadar.vue';
 
   export default {
     components: {
-      ChartPin
+      ChartPin,
+      ChartRadar,
     }
   }
 </script>

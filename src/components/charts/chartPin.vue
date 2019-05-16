@@ -1,5 +1,5 @@
 <template>
-  <div id="echart">
+  <div id="chart-pin">
     <!--创建一个echarts的容器-->
     <div :id="id" :style="{'width':width+'px', 'height':height+'px'}"></div>
   </div>
