@@ -12,6 +12,7 @@
             :id="'chart1'"
             :width = 500
             :height = 500
+            :chartData = "chart1"
           ></ChartBar>
         </div>
 
@@ -29,18 +30,19 @@
         <div class="clearfix">
           <div class="pull-left" style="height:10px;"></div>
           <div class="pull-left">
-            <ChartBar
-              :id ="'chart2'"
-              :width = 300
-              :height = 300
-            ></ChartBar>
+            <!--<ChartBar-->
+              <!--:id ="'chart2'"-->
+              <!--:width = 300-->
+              <!--:height = 300-->
+              <!--:data = chart1-->
+            <!--&gt;</ChartBar>-->
           </div>
           <div class="pull-left">
-            <ChartBar
-              :id = "'chart3'"
-              :width=300
-              :height=300
-            ></ChartBar>
+            <!--<ChartBar-->
+              <!--:id = "'chart3'"-->
+              <!--:width=300-->
+              <!--:height=300-->
+            <!--&gt;</ChartBar>-->
           </div>
           <div class="pull-left"></div>
         </div>
@@ -69,15 +71,34 @@
 </template>
 
 <script>
+  import axios from 'axios';
   import ChartPie from './charts/chartPie.vue';
   import ChartBar from './charts/chartBar.vue';
   import ChartRadar from './charts/chartRadar.vue';
 
   export default {
+    data() {
+      return {
+        chart1: {}
+      }
+    },
     components: {
       ChartPie,
       ChartBar,
       ChartRadar,
+    },
+    mounted() {
+      console.log(2);
+
+    },
+    created() {
+      console.log(1);
+      axios.get('./datas/heart/chart1.json')
+        .then(response => {
+          this.chart1 = response.data;
+        })
+        .catch(error => {
+        })
     }
   }
 </script>
