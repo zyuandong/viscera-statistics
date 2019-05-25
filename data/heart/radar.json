@@ -1,52 +1,51 @@
 {
-  "title":{
-    "text":"基础雷达图"
-  },
-  "tooltip":{
-
-  },
   "legend":{
+    "show": false,
     "data":[
-      "预算分配（Allocated Budget）",
-      "实际开销（Actual Spending）"
-    ]
+      "预算分配（Allocated Budget）"]
   },
   "radar":{
     "name":{
       "textStyle":{
         "color":"#fff",
-        "backgroundColor":"#999",
-        "borderRadius":3,
-        "padding":[
-          3,
-          5
-        ]
+        "borderRadius":3
+      }
+    },
+    "splitNumber": 3,
+    "splitLine": {
+      "lineStyle": {
+        "color": "#acfcfa"
+      }
+    },
+    "splitArea": {
+      "show": false
+    },
+    "axisLine": {
+      "show": false,
+      "lineStyle": {
+        "show": false
       }
     },
     "indicator":[
       {
-        "name":"销售（sales）",
+        "name":"血压",
         "max":6500
       },
       {
-        "name":"管理（Administration）",
+        "name":"体重指数",
         "max":16000
       },
       {
-        "name":"信息技术（Information Techology）",
+        "name":"胆固醇水平",
         "max":30000
       },
       {
-        "name":"客服（Customer Support）",
+        "name":"腰围",
         "max":38000
       },
       {
-        "name":"研发（Development）",
+        "name":"血糖",
         "max":52000
-      },
-      {
-        "name":"市场（Marketing）",
-        "max":25000
       }
     ]
   },
@@ -61,23 +60,21 @@
             10000,
             28000,
             35000,
-            50000,
-            19000
+            50000
           ],
           "name":"预算分配（Allocated Budget）"
-        },
-        {
-          "value":[
-            5000,
-            14000,
-            28000,
-            31000,
-            42000,
-            21000
-          ],
-          "name":"实际开销（Actual Spending）"
         }
-      ]
+      ],
+      "itemStyle": {
+        "normal": {
+          "color": "#F9713C"
+        }
+      },
+      "areaStyle": {
+        "normal": {
+          "opacity": 0.3
+        }
+      }
     }
   ]
 }

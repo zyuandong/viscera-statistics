@@ -1,6 +1,7 @@
 <template>
   <div id="chart-radar">
-    <div :id="id" :style="{'width':width+'px', 'height':height+'px'}"></div>
+    <!--:style="{'height':height+'px'}" -->
+    <div :id="id" style="width: 100%; height: 100%;" :style="{'height':height+'px'}"></div>
   </div>
 </template>
 

@@ -1,7 +1,8 @@
 <template>
   <div id="chart-pin">
     <!--创建一个echarts的容器-->
-    <div :id="id" :style="{'width':width+'px', 'height':height+'px'}"></div>
+    <!--:style="{'height':height+'px'}"-->
+    <div :id="id" style="width: 100%; height: 100%"></div>
   </div>
 </template>
 
