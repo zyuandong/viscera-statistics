@@ -1,10 +1,10 @@
 {
   "title":{
-    "text":"Customized Pie",
+    "text":"不同类型病毒性肝炎占比",
     "left":"center",
     "top":20,
     "textStyle":{
-      "color":"#ccc"
+      "color":"#fff"
     }
   },
   "tooltip":{
@@ -13,8 +13,8 @@
   },
   "visualMap":{
     "show":false,
-    "min":80,
-    "max":600,
+    "min":2,
+    "max":100,
     "inRange":{
       "colorLightness":[
         0,
@@ -33,24 +33,24 @@
       ],
       "data":[
         {
-          "value":235,
-          "name":"视频广告"
+          "value":77,
+          "name":"甲型肝炎"
         },
         {
-          "value":274,
-          "name":"联盟广告"
+          "value":16,
+          "name":"乙型肝炎"
         },
         {
-          "value":310,
-          "name":"邮件营销"
+          "value":2,
+          "name":"丙型肝炎"
         },
         {
-          "value":335,
-          "name":"直接访问"
+          "value":3,
+          "name":"戊型肝炎"
         },
         {
-          "value":400,
-          "name":"搜索引擎"
+          "value":2,
+          "name":"其他"
         }
       ],
       "roseType":"radius",

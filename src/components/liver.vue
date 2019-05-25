@@ -10,7 +10,7 @@
           <img src="./../assets/images/liver/liver.png" alt="">
         </div>
       </div>
-      <div class="pull-left width-6 block-c">
+      <div class="pull-left width-6 p-10 block-c">
         <div class="sub-title">
           <span class="main-text">全国网民肝脏数据</span><span class="sub-text">分析</span>
           <span class="sub-title-line w-10"></span>
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div class="clearfix block-a">
+    <div class="clearfix block-a p-10">
       <div class="sub-title">
         <span class="main-text">肝脏疾病</span><span class="sub-text">现状</span>
         <span class="sub-title-line w-6"></span>
@@ -67,7 +67,7 @@
           <ChartBar
             :id="'bar3'"
             :width=100
-            :height=400
+            :height=200
             :data="bar3"
           >
           </ChartBar>

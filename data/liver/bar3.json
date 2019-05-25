@@ -1,13 +1,21 @@
 {
-  "title": { "text": "男性心率/分钟" },
+  "title": {
+    "text": "乙型肝炎",
+    "textStyle":{
+      "color":"#fff"
+    }
+  },
   "tooltip": {},
   "xAxis": {
-    "data": ["18-25","26-35","36-45","46-55","56-65"]
+    "type": "value"
   },
-  "yAxis": {},
+  "yAxis": {
+    "type": "category",
+    "inverse": true,
+    "data": ["发病数（例）","死亡数（例）"]
+  },
   "series": [{
-    "name": "销量",
     "type": "bar",
-    "data": [5, 20, 36, 10, 10]
+    "data": [1001000, 42500]
   }]
 }
