@@ -33,24 +33,24 @@
       ],
       "data":[
         {
-          "value":235,
-          "name":"视频广告"
+          "value":21.5,
+          "name":"其他病因"
         },
         {
-          "value":274,
-          "name":"联盟广告"
+          "value":15.1,
+          "name":"肾小球肾炎"
         },
         {
-          "value":310,
-          "name":"邮件营销"
+          "value":15.6,
+          "name":"硬阻性肾病"
         },
         {
-          "value":335,
-          "name":"直接访问"
+          "value":20.8,
+          "name":"高血压肾病"
         },
         {
-          "value":400,
-          "name":"搜索引擎"
+          "value":27.0,
+          "name":"糖科病肾病"
         }
       ],
       "roseType":"radius",

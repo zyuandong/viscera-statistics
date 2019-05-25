@@ -1,13 +1,16 @@
 {
-  "title": { "text": "男性心率/分钟" },
+  "title": { "text": "慢性肾脏疾病与心血管疾病关系密切" },
   "tooltip": {},
   "xAxis": {
-    "data": ["18-25","26-35","36-45","46-55","56-65"]
+    "type": "value"
   },
-  "yAxis": {},
+  "yAxis": {
+    "type": "category",
+    "inverse": true,
+    "data": ["卒中","心衰","冠心病"]
+  },
   "series": [{
-    "name": "销量",
     "type": "bar",
-    "data": [5, 20, 36, 10, 10]
+    "data": [13, 16, 18]
   }]
 }
