@@ -10,9 +10,9 @@
           <!--:key 为此组件的特殊标识，不能用作向子组件传值-->
           <ChartBar
             :id="'chart1'"
-            :width = 500
-            :height = 500
-            :chartData = "chart1"
+            :width=500
+            :height=500
+            :data="chart1"
           ></ChartBar>
         </div>
 
@@ -30,12 +30,12 @@
         <div class="clearfix">
           <div class="pull-left" style="height:10px;"></div>
           <div class="pull-left">
-            <!--<ChartBar-->
-              <!--:id ="'chart2'"-->
-              <!--:width = 300-->
-              <!--:height = 300-->
-              <!--:data = chart1-->
-            <!--&gt;</ChartBar>-->
+            <ChartBar
+              :id="'chart2'"
+              :width=300
+              :height=300
+              :data="bar1"
+            ></ChartBar>
           </div>
           <div class="pull-left">
             <!--<ChartBar-->
@@ -57,12 +57,14 @@
             :id="'chart4'"
             :width=400
             :height=400
+            :data="radar"
           ></ChartRadar>
 
           <ChartPie
             :id="'chart5'"
             :width=400
             :height=400
+            :data="pie1"
           ></ChartPie>
         </div>
       </div>
@@ -71,7 +73,7 @@
 </template>
 
 <script>
-  import axios from 'axios';
+  import Axios from 'axios';
   import ChartPie from './charts/chartPie.vue';
   import ChartBar from './charts/chartBar.vue';
   import ChartRadar from './charts/chartRadar.vue';
@@ -79,7 +81,10 @@
   export default {
     data() {
       return {
-        chart1: {}
+        chart1: {},
+        bar1: {},
+        radar: {},
+        pie1: {},
       }
     },
     components: {
@@ -89,15 +94,31 @@
     },
     mounted() {
       console.log(2);
-
     },
     created() {
       console.log(1);
-      axios.get('./datas/heart/chart1.json')
+      Axios.get('./data/heart/chart1.json')
         .then(response => {
           this.chart1 = response.data;
         })
         .catch(error => {
+        });
+
+      Axios.get('./data/heart/bar1.json')
+        .then(response => {
+          this.bar1 = response.data;
+        })
+        .catch(error => {
+        });
+
+      Axios.get('./data/heart/radar.json')
+        .then(resp => {
+          this.radar = resp.data;
+        });
+
+      Axios.get('./data/heart/pie1.json')
+        .then(resp => {
+          this.pie1 = resp.data;
         })
     }
   }

@@ -1,12 +1,10 @@
 <template>
-  <div id="chart-pin">
-    <!--创建一个echarts的容器-->
+  <div id="chart-line">
     <div :id="id" :style="{'width':width+'px', 'height':height+'px'}"></div>
   </div>
 </template>
 
 <script>
-  // const echarts = require('echarts');
   import echarts from 'echarts';
   export default {
     props: {
@@ -23,7 +21,8 @@
         required: true
       },
       data: {
-        type: Object
+        type: Object,
+        required: true
       }
     },
     mounted() {
@@ -31,9 +30,7 @@
     },
     watch: {
       data(value) {
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById(this.id));
-        // 绘制图表
+        let myChart = echarts.init(document.getElementById(this.id));
         myChart.setOption(value);
       }
     }

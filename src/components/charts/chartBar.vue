@@ -20,7 +20,7 @@
         type: Number,
         required: true
       },
-      chartData: {
+      data: {
         type: Object,
         required: true
       }
@@ -29,7 +29,7 @@
 
     },
     watch: {
-      chartData(value) {
+      data(value) {
         let myChart = echarts.init(document.getElementById(this.id));
         myChart.setOption(value);
       }
