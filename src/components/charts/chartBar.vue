@@ -14,12 +14,10 @@
         required: true
       },
       width: {
-        type: Number,
-        required: true
+        type: Number
       },
       height: {
-        type: Number,
-        required: true
+        type: Number
       },
       data: {
         type: Object,
