@@ -3,13 +3,77 @@
     "text": "女性心率/分钟"
   },
   "tooltip": {},
+  "legend": {
+    "show": false,
+    "data": ["运动员", "极好", "很好", "尚好", "一般", "稍差", "不佳"]
+  },
   "xAxis": {
+    "name": "(年龄)",
     "data": ["18-25","26-35","36-45","46-55","56-65"]
   },
   "yAxis": {},
   "series": [{
-    "name": "销量",
+    "name": "运动员",
+    "stack": "总量",
     "type": "bar",
-    "data": [5, 20, 36, 10, 100]
+    "barCategoryGap": "40%",
+    "data": [52, 51, 53, 54, 55],
+    "itemStyle": {
+      "normal": {"color": "#2ec7c9"}
+    }
+  },{
+    "name": "极好",
+    "stack": "总量",
+    "type": "bar",
+    "barCategoryGap": "40%",
+    "data": [57, 57, 58, 59, 59],
+    "itemStyle": {
+      "normal": {"color": "#97b551"}
+    }
+  },{
+    "name": "很好",
+    "stack": "总量",
+    "type": "bar",
+    "barCategoryGap": "40%",
+    "data": [63, 63, 64, 65, 66],
+    "itemStyle": {
+      "normal": {"color": "#51a3a3"}
+    }
+  },{
+    "name": "尚好",
+    "stack": "总量",
+    "type": "bar",
+    "barCategoryGap": "40%",
+    "data": [67, 68, 68, 69, 69],
+    "itemStyle": {
+      "normal": {"color": "#b0bff4"}
+    }
+  },{
+    "name": "一般",
+    "stack": "总量",
+    "type": "bar",
+    "barCategoryGap": "40%",
+    "data": [71, 72, 73, 74, 74],
+    "itemStyle": {
+      "normal": {"color": "#ead84c"}
+    }
+  },{
+    "name": "稍差",
+    "stack": "总量",
+    "type": "bar",
+    "barCategoryGap": "40%",
+    "data": [72, 73, 74, 75, 76],
+    "itemStyle": {
+      "normal": {"color": "#dd7473"}
+    }
+  },{
+    "name": "不佳",
+    "stack": "总量",
+    "type": "bar",
+    "barCategoryGap": "40%",
+    "data": [81, 82, 83, 84, 85],
+    "itemStyle": {
+      "normal": {"color": "#db2828"}
+    }
   }]
 }

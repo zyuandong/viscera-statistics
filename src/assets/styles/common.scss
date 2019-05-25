@@ -37,6 +37,18 @@ html,body {
     float: left;
   }
 
+  .pull-right {
+    float: right;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
   .width-4 {
     width: 40%;
   }
@@ -76,7 +88,8 @@ html,body {
 
   .sub-title {
     clear: both;
-    font-size: 16px;
+    font-size: 20px;
+    margin: 30px 0 20px 0;
 
     .main-text {
       color: #37fffe;
@@ -89,19 +102,19 @@ html,body {
       background-position: left bottom;
 
       &.w-6 {
-        width: calc(100% - (96px + 6px));
+        width: calc(100% - (121px + 6px));
       }
       &.w-8 {
-        width: calc(100% - (128px + 6px));
+        width: calc(100% - (161px + 6px));
       }
       &.w-10 {
-        width: calc(100% - (160px + 6px));
+        width: calc(100% - (201px + 6px));
       }
       &.w-11 {
-        width: calc(100% - (176px + 6px));
+        width: calc(100% - (221px + 6px));
       }
       &.w-12 {
-        width: calc(100% - (192px + 6px));
+        width: calc(100% - (241px + 6px));
       }
     }
   }

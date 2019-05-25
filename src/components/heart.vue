@@ -21,11 +21,11 @@
         </div>
 
         <div class="clearfix">
-          <div class="pull-left" style="width:15%;">
-            <div>总心跳动</div>
+          <div class="pull-left" style="width:18%;">
+            <div style="font-size:18px; color:#37fffe;">总心跳动</div>
             <div>
               约
-              <span>20亿</span>
+              <span style="font-size: 22px">20亿</span>
               次
             </div>
           </div>
@@ -46,7 +46,42 @@
               :data="bar2"
             ></ChartBar>
           </div>
-          <div class="pull-left" style="width:15%"></div>
+          <div class="pull-left legend" style="width:12%">
+            <div class="clearfix">
+              <div class="pull-left text">运动员</div>
+              <div class="pull-left block color-ydy"></div>
+            </div>
+
+            <div class="clearfix">
+              <div class="pull-left text">极好</div>
+              <div class="pull-left block color-jh"></div>
+            </div>
+
+            <div class="clearfix">
+              <div class="pull-left text">很好</div>
+              <div class="pull-left block color-hh"></div>
+            </div>
+
+            <div class="clearfix">
+              <div class="pull-left text">尚好</div>
+              <div class="pull-left block color-sh"></div>
+            </div>
+
+            <div class="clearfix">
+              <div class="pull-left text">一般</div>
+              <div class="pull-left block color-yb"></div>
+            </div>
+
+            <div class="clearfix">
+              <div class="pull-left text">稍差</div>
+              <div class="pull-left block color-sc"></div>
+            </div>
+
+            <div class="clearfix">
+              <div class="pull-left text">不佳</div>
+              <div class="pull-left block color-bj"></div>
+            </div>
+          </div>
         </div>
 
         <div class="sub-title">
@@ -59,7 +94,7 @@
             <ChartRadar
               :id="'radar'"
               :width=400
-              :height=300
+              :height=400
               :data="radar"
             ></ChartRadar>
           </div>
@@ -68,7 +103,7 @@
             <ChartPie
               :id="'pie1'"
               :width=400
-              :height=400
+              :height=100
               :data="pie1"
             ></ChartPie>
           </div>
@@ -79,7 +114,7 @@
             <ChartPie
               :id="'pie2'"
               :width=400
-              :height=400
+              :height=100
               :data="pie2"
             ></ChartPie>
           </div>
@@ -90,7 +125,7 @@
             <ChartPie
               :id="'pie3'"
               :width=400
-              :height=400
+              :height=100
               :data="pie3"
             ></ChartPie>
           </div>
@@ -102,7 +137,7 @@
             <ChartPie
               :id="'pie4'"
               :width=400
-              :height=400
+              :height=100
               :data="pie4"
             ></ChartPie>
           </div>
@@ -113,7 +148,7 @@
             <ChartPie
               :id="'pie5'"
               :width=400
-              :height=400
+              :height=100
               :data="pie5"
             ></ChartPie>
           </div>
@@ -124,7 +159,7 @@
             <ChartPie
               :id="'pie6'"
               :width=400
-              :height=400
+              :height=100
               :data="pie6"
             ></ChartPie>
           </div>
@@ -134,47 +169,47 @@
 
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix statistics-box">
           <div style="width:65%;margin:0 auto;">
-            <div class="pull-left" style="width: 15%">
+            <div class="pull-left item" style="width: 15%">
               <div class="title">血压</div>
-              <div class="num">120/80</div>
+              <div class="num" style="color:#37fffe; font-size:20px;">120/80</div>
             </div>
 
-            <div class="pull-left" style="width: 15%">
+            <div class="pull-left item" style="width: 15%">
               <div class="title">体重指数</div>
-              <div class="num">18.9</div>
+              <div class="num" style="color:#37fffe; font-size:20px;">18.9</div>
             </div>
 
-            <div class="pull-left" style="width: 25%">
+            <div class="pull-left item" style="width: 25%">
               <div class="title">胆固醇水平</div>
-              <div class="num">
+              <div class="num" style="color:#37fffe; font-size:20px;">
                 < 200hg/分升
               </div>
             </div>
 
-            <div class="pull-left" style="width: 15%">
+            <div class="pull-left item" style="width: 15%">
               <div class="title">血糖</div>
               <div class="num">
-                <div>血糖蛋白空腹</div>
-                <div>
+                <div style="color:#37fffe;">血糖蛋白空腹</div>
+                <div style="color:#37fffe; font-size:20px;">
                   < 6
                 </div>
               </div>
             </div>
 
-            <div class="pull-left" style="width: 30%">
+            <div class="pull-left item" style="width: 30%">
               <div class="title">腰围</div>
               <div class="num">
-                <div class="pull-left">
-                  <div>男性</div>
-                  <div>
+                <div class="pull-left" style="width: 50%;">
+                  <div style="color:#37fffe;">男性</div>
+                  <div style="color:#37fffe; font-size:20px;">
                     < 40英寸
                   </div>
                 </div>
-                <div class="pull-left">
-                  <div>女性</div>
-                  <div>
+                <div class="pull-left" style="width: 50%;">
+                  <div style="color:#37fffe;">女性</div>
+                  <div style="color:#37fffe; font-size:20px;">
                     < 35英寸
                   </div>
                 </div>
@@ -219,12 +254,6 @@
     },
     created() {
       console.log(1);
-      Axios.get('./data/heart/chart1.json')
-        .then(response => {
-          this.chart1 = response.data;
-        })
-        .catch(error => {
-        });
 
       Axios.get('./data/heart/bar1.json')
         .then(response => {
@@ -285,7 +314,57 @@
     .radar-pie-box {
 
       .pie-text {
-        height: 100px;
+        padding: 35px 0;
+      }
+    }
+
+    .legend {
+      &>div {
+        padding: 3px 0;
+      }
+      .block {
+        width: 18px;
+        height: 18px;
+
+        &.color-ydy {
+          background-color: #2ec7c9;
+        }
+        &.color-jh {
+          background-color: #97b551;
+        }
+        &.color-hh {
+          background-color: #51a3a3;
+        }
+        &.color-sh {
+          background-color: #b0bff4;
+        }
+        &.color-yb {
+          background-color: #ead84c;
+        }
+        &.color-sc {
+          background-color: #dd7473;
+        }
+        &.color-bj {
+          background-color: #db2828;
+        }
+      }
+
+      .text {
+        width: calc(100% - 20px);
+        text-align: right;
+        margin: 0 2px 0 0;
+      }
+    }
+
+    .statistics-box {
+      .item {
+        padding: 0 18px;
+        border-right: 1px solid #37fffe;
+      }
+      .num {
+        height: 70px;
+        color: #37fffe;
+        padding: 20px 0 70px;
       }
     }
   }

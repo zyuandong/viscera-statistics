@@ -8,6 +8,7 @@
     "orient":"vertical",
     "x":"left",
     "data":[
+      "normal",
       "直接访问"
     ]
   },
@@ -16,8 +17,8 @@
       "name":"访问来源",
       "type":"pie",
       "radius":[
-        "50%",
-        "70%"
+        "70%",
+        "80%"
       ],
       "avoidLabelOverlap":false,
       "label":{
@@ -40,8 +41,18 @@
       },
       "data":[
         {
-          "value":335,
-          "name":"直接访问"
+          "value":31,
+          "name":"normal",
+          "itemStyle": {
+            "normal": {"color": "#033348"}
+          }
+        },
+        {
+          "value":69,
+          "name":"直接访问",
+          "itemStyle": {
+            "normal": {"color": "#2ec7c9"}
+          }
         }
       ]
     }
