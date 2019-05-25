@@ -111,21 +111,27 @@
         <div class="clearfix">
           <div class="pull-left" style="width:20%">
             <div class="text">大气污染</div>
-            <ChartPie
+            <div class="pull-left" style="width:50%">
+              <ChartPie
               :id="'pie4'"
-              :width=300
-              :height=300
+              :width=100
+              :height=100
               :data="pie4"
             ></ChartPie>
+            </div>
+            <div class="pull-left" style="width:50%">全球呼吸严重污染中的人数占比</div>
           </div>
           <div class="pull-left" style="width:20%">
             <div class="text"></div>
-            <ChartPie
+            <div class="pull-left" style="width:50%">
+              <ChartPie
               :id="'pie5'"
-              :width=300
-              :height=300
+              :width=100
+              :height=100
               :data="pie5"
             ></ChartPie>
+            </div>
+            <div class="pull-left" style="width:50%">目前中国肺癌中腺癌占比</div>
           </div>
           <div class="pull-left" style="width:20%">
             <div class="text">肺部慢性疾病</div>
@@ -135,21 +141,27 @@
           </div>
           <div class="pull-left" style="width:20%">
             <div class="text">职业因素</div>
-            <ChartPie
+            <div class="pull-left" style="width:50%">
+              <ChartPie
               :id="'pie6'"
-              :width=300
-              :height=300
+              :width=100
+              :height=100
               :data="pie6"
             ></ChartPie>
+            </div>
+            <div class="pull-left" style="width:50%">职业因素在肺癌中的占比</div>
           </div>
           <div class="pull-left" style="width:20%">
             <div class="text"></div>
-            <ChartPie
+            <div class="pull-left" style="width:50%">
+              <ChartPie
               :id="'pie7'"
-              :width=300
-              :height=300
+              :width=100
+              :height=100
               :data="pie7"
             ></ChartPie>
+            </div>
+            <div class="pull-left" style="width:50%">矿工中死于职业性肺癌占比</div>
           </div>
         </div>
       </div>

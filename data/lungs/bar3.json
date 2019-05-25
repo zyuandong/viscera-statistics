@@ -1,13 +1,15 @@
 {
-  "title": { "text": "男性心率/分钟" },
   "tooltip": {},
   "xAxis": {
-    "data": ["18-25","26-35","36-45","46-55","56-65"]
+    "type": "value"
   },
-  "yAxis": {},
+  "yAxis": {
+    "type": "category",
+    "inverse": true,
+    "data": ["中国吸烟总数","男性吸烟总数","女性吸烟总数"]
+  },
   "series": [{
-    "name": "销量",
     "type": "bar",
-    "data": [5, 20, 36, 10, 10]
+    "data": [3.15, 2.54, 0.14]
   }]
 }
