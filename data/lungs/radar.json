@@ -1,0 +1,80 @@
+{
+  "legend":{
+    "show": false,
+    "data":[
+      "预算分配（Allocated Budget）"]
+  },
+  "radar":{
+    "name":{
+      "textStyle":{
+        "color":"#fff",
+        "borderRadius":3
+      }
+    },
+    "splitNumber": 3,
+    "splitLine": {
+      "lineStyle": {
+        "color": "#acfcfa"
+      }
+    },
+    "splitArea": {
+      "show": false
+    },
+    "axisLine": {
+      "show": false,
+      "lineStyle": {
+        "show": false
+      }
+    },
+    "indicator":[
+      {
+        "name":"血压",
+        "max":6500
+      },
+      {
+        "name":"体重指数",
+        "max":16000
+      },
+      {
+        "name":"胆固醇水平",
+        "max":30000
+      },
+      {
+        "name":"腰围",
+        "max":38000
+      },
+      {
+        "name":"血糖",
+        "max":52000
+      }
+    ]
+  },
+  "series":[
+    {
+      "name":"预算 vs 开销（Budget vs spending）",
+      "type":"radar",
+      "data":[
+        {
+          "value":[
+            4300,
+            10000,
+            28000,
+            35000,
+            50000
+          ],
+          "name":"预算分配（Allocated Budget）"
+        }
+      ],
+      "itemStyle": {
+        "normal": {
+          "color": "#F9713C"
+        }
+      },
+      "areaStyle": {
+        "normal": {
+          "opacity": 0.3
+        }
+      }
+    }
+  ]
+}
