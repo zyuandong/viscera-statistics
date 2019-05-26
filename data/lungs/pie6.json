@@ -40,9 +40,15 @@
       },
       "data":[
         {
-          "value": 10
+          "value": 10,
+          "itemStyle": {
+            "color": "#ead84c"
+          }
         },{
-          "value": 90
+          "value": 90,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }

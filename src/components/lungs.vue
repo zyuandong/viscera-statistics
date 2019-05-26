@@ -70,7 +70,7 @@
             <ChartLine
               :id="'line1'"
               :width = 500
-              :height = 500
+              :height = 300
               :data = "line1"
             ></ChartLine>
           </div>
@@ -86,7 +86,7 @@
             <ChartBar
               :id="'bar3'"
               :width=300
-              :height=300
+              :height=200
               :data="bar3"
             ></ChartBar>
           </div>
@@ -108,9 +108,11 @@
           </div>
         </div>
         
-        <div class="clearfix">
+        <div class="clearfix part-4">
           <div class="pull-left" style="width:20%">
-            <div class="text">大气污染</div>
+            <div class="text-box">
+              <div class="text">大气污染</div>
+            </div>
             <div class="pull-left" style="width:50%">
               <ChartPie
               :id="'pie4'"
@@ -119,10 +121,11 @@
               :data="pie4"
             ></ChartPie>
             </div>
-            <div class="pull-left" style="width:50%">全球呼吸严重污染中的人数占比</div>
+            <div class="pull-left desc-text" style="width:50%">全球呼吸严重污染中的人数占比</div>
           </div>
           <div class="pull-left" style="width:20%">
-            <div class="text"></div>
+            <div class="text-box">
+            </div>
             <div class="pull-left" style="width:50%">
               <ChartPie
               :id="'pie5'"
@@ -131,16 +134,20 @@
               :data="pie5"
             ></ChartPie>
             </div>
-            <div class="pull-left" style="width:50%">目前中国肺癌中腺癌占比</div>
+            <div class="pull-left desc-text" style="width:50%">目前中国肺癌中腺癌占比</div>
           </div>
           <div class="pull-left" style="width:20%">
-            <div class="text">肺部慢性疾病</div>
-            <div>
-              肺部慢性疾病 <span> > </span> 正常人
+            <div class="text-box">
+              <div class="text">肺部慢性疾病</div>
+            </div>
+            <div style="padding:30px 0 0;">
+              肺部慢性疾病 <span style="color: #37fffe"> > </span> 正常人
             </div>
           </div>
           <div class="pull-left" style="width:20%">
-            <div class="text">职业因素</div>
+            <div class="text-box">
+              <div class="text">职业因素</div>
+            </div>
             <div class="pull-left" style="width:50%">
               <ChartPie
               :id="'pie6'"
@@ -149,10 +156,11 @@
               :data="pie6"
             ></ChartPie>
             </div>
-            <div class="pull-left" style="width:50%">职业因素在肺癌中的占比</div>
+            <div class="pull-left desc-text" style="width:50%">职业因素在肺癌中的占比</div>
           </div>
           <div class="pull-left" style="width:20%">
-            <div class="text"></div>
+            <div class="text-box">
+            </div>
             <div class="pull-left" style="width:50%">
               <ChartPie
               :id="'pie7'"
@@ -161,7 +169,7 @@
               :data="pie7"
             ></ChartPie>
             </div>
-            <div class="pull-left" style="width:50%">矿工中死于职业性肺癌占比</div>
+            <div class="pull-left desc-text" style="width:50%">矿工中死于职业性肺癌占比</div>
           </div>
         </div>
       </div>
@@ -260,3 +268,26 @@
     }
   }
 </script>
+
+<style lang="scss">
+  #lungs {
+    .part-4 {
+      padding: 15px 0 0;
+      border-top: 1px solid #fff;
+
+      .text-box {
+        height: 50px;
+      }
+      .text {
+        display: inline-block;
+        background-color: #dd7473;
+        padding: 3px 10px;
+        border-radius: 3px;
+      }
+
+      .desc-text {
+        padding: 20px 10px 0;
+      }
+    }
+  }
+</style>

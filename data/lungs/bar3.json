@@ -1,15 +1,41 @@
 {
-  "tooltip": {},
+  "grid": {
+    "left": 80,
+    "right": 35
+  },
   "xAxis": {
-    "type": "value"
+    "type": "value",
+    "show": false
   },
   "yAxis": {
     "type": "category",
     "inverse": true,
-    "data": ["中国吸烟总数","男性吸烟总数","女性吸烟总数"]
+    "data": ["中国吸烟总数","男性吸烟总数","女性吸烟总数"],
+    "axisLabel": {
+      "textStyle": {
+        "color": "#fff"
+      }
+    },
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    }
   },
   "series": [{
     "type": "bar",
-    "data": [3.15, 2.54, 0.14]
+    "data": [3.15, 2.54, 0.14],
+    "barWidth": "30%",
+    "label": {
+      "show": true,
+      "color": "#fff",
+      "position": "right",
+      "formatter": "{c}亿人"
+    },
+    "itemStyle": {
+      "color": "#2ec7c9",
+      "barBorderRadius": 3
+    }
   }]
 }

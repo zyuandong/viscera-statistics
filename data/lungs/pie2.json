@@ -1,6 +1,14 @@
 {
   "title": {
-    "text": "每年肺癌死亡人数"
+    "text": "每年肺癌死亡人数",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "bottom": 10,
+    "left": "50%"
   },
   "tooltip":{
     "trigger":"item",
@@ -43,9 +51,15 @@
       },
       "data":[
         {
-          "value": 63.1
+          "value": 63.1,
+          "itemStyle": {
+            "color": "#ead84c"
+          }
         },{
-          "value": 36.9
+          "value": 36.9,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }

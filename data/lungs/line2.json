@@ -1,13 +1,37 @@
 {
+  "title": {
+    "text": "不同人群死于肺癌概率（%）",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 12,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "top": 0,
+    "left": "50%"
+  },
   "xAxis": {
     "type": "category",
-    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    "data": ["45", "55", "65", "75"],
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    }
   },
   "yAxis": {
-    "type": "value"
+    "type": "value",
+    "splitLine": {
+      "show": false
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    }
   },
   "series": [{
-    "data": [820, 932, 901, 934, 1290, 1330, 1320],
+    "data": [820, 932, 901, 934],
     "type": "line"
   }]
 }

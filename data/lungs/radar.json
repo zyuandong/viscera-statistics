@@ -1,8 +1,6 @@
 {
   "legend":{
-    "show": false,
-    "data":[
-      "预算分配（Allocated Budget）"]
+    "data":["男吸烟率","女吸烟率"]
   },
   "radar":{
     "name":{
@@ -11,6 +9,7 @@
         "borderRadius":3
       }
     },
+    "radius": "40%",
     "splitNumber": 3,
     "splitLine": {
       "lineStyle": {

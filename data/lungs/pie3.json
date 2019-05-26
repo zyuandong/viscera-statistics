@@ -1,6 +1,14 @@
 {
   "title": {
-    "text": "肺癌死亡率？？？？"
+    "text": "肺癌死亡率",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "bottom": 10,
+    "left": "50%"
   },
   "tooltip":{
     "trigger":"item",
@@ -43,8 +51,15 @@
       },
       "data":[
         {
-          "value":335,
-          "name":"直接访问"
+          "value": 46,
+          "itemStyle": {
+            "color": "#db2828"
+          }
+        },{
+          "value": 54,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }

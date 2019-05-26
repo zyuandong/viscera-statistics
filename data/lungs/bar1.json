@@ -1,15 +1,54 @@
 {
-  "title": { "text": "男性死亡率TOP10" },
+  "title": {
+    "text": "男性死亡率TOP10",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "top": 0,
+    "left": "50%"
+  },
   "tooltip": {},
   "legend": {
     "data": ["男性死亡率TOP10"]
   },
   "xAxis": {
-    "data": ["肺癌","肝癌","胃癌","食管癌","结直肠癌", "胰腺癌", "脑癌", "白血病", "前列腺癌", "淋巴癌"]
+    "data": ["肺癌","肝癌","胃癌","食管癌","结直肠癌", "胰腺癌", "脑癌", "白血病", "前列腺癌", "淋巴癌"],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "color": "#fff",
+      "rotate": 45,
+      "text": {
+        "color": "#fff"
+      }
+    }
   },
-  "yAxis": {},
+  "yAxis": {
+    "show": false
+  },
   "series": [{
     "type": "bar",
-    "data": [61.1, 33.32, 29.24, 19.92, 14.84, 6.64, 4.46, 4.41, 4.22, 4.13]
+    "data": [61.1, 33.32, 29.24, 19.92, 14.84, 6.64, 4.46, 4.41, 4.22, 4.13],
+    "label": {
+      "normal": {
+        "show": true,
+        "color": "#fff",
+        "rotate": 90,
+        "align": "left",
+        "position": "top",
+        "formatter": "{c}%"
+      }
+    },
+    "itemStyle": {
+      "color": "#78ffd6",
+      "barBorderRadius": 3
+    }
   }]
 }

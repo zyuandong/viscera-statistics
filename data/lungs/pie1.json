@@ -1,6 +1,14 @@
 {
   "title": {
-    "text": "每年新发肺癌人数"
+    "text": "每年新发肺癌人数",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "bottom": 10,
+    "left": "50%"
   },
   "tooltip":{
     "trigger":"item",
@@ -43,9 +51,15 @@
       },
       "data":[
         {
-          "value": 78.7
+          "value": 78.7,
+          "itemStyle": {
+            "color": "#2ec8b6"
+          }
         },{
-          "value": 21.3
+          "value": 21.3,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }

@@ -1,13 +1,31 @@
 {
   "xAxis": {
     "type": "category",
-    "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    "color": "#fff",
+    "data": ["5-", "15-", "25-", "35-", "45-", "55-", "65-", "75-", "85-"],
+    "axisLabel": {
+      "rotate": 45
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    }
   },
   "yAxis": {
-    "type": "value"
+    "type": "value",
+    "color": "#fff",
+    "splitLine": {
+      "show": false
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    }
   },
   "series": [{
-    "data": [820, 932, 901, 934, 1290, 1330, 1320],
+    "data": [820, 932, 901, 934, 1290, 1330, 1320, 1330, 1440],
     "type": "line"
   }]
 }

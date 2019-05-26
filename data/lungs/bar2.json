@@ -1,15 +1,54 @@
 {
-  "title": { "text": "女性死亡率TOP10" },
+  "title": {
+    "text": "女性死亡率TOP10",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "top": 0,
+    "left": "50%"
+  },
   "tooltip": {},
   "legend": {
     "data": ["女性死亡率TOP10"]
   },
   "xAxis": {
-    "data": ["肺癌","胃癌","肝癌","结直肠癌","乳腺癌", "食管癌", "胰腺癌", "宫颈癌", "脑癌", "卵巢癌"]
+    "data": ["肺癌","胃癌","肝癌","结直肠癌","乳腺癌", "食管癌", "胰腺癌", "宫颈癌", "脑癌", "卵巢癌"],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "color": "#fff",
+      "rotate": 45,
+      "text": {
+        "color": "#fff"
+      }
+    }
   },
-  "yAxis": {},
+  "yAxis": {
+    "show": false
+  },
   "series": [{
     "type": "bar",
-    "data": [29.71, 13.33, 11.67, 11.34, 9.9, 8, 5.18, 4.57, 3.75, 3.375]
+    "data": [29.71, 13.33, 11.67, 11.34, 9.9, 8, 5.18, 4.57, 3.75, 3.375],
+    "label": {
+      "normal": {
+        "show": true,
+        "color": "#fff",
+        "rotate": 90,
+        "align": "left",
+        "position": "top",
+        "formatter": "{c}%"
+      }
+    },
+    "itemStyle": {
+      "color": "#ead84c",
+      "barBorderRadius": 3
+    }
   }]
 }
