@@ -1,0 +1,65 @@
+{
+  "title": {
+    "text": "丙型肝炎",
+    "textStyle":{
+      "color":"#fff",
+      "fontSize": 12,
+      "fontWeight": 400
+    },
+    "top": 30
+  },
+  "grid": {
+    "left": 85,
+    "bottom": 20
+  },
+  "tooltip": {},
+  "xAxis": {
+    "show": false,
+    "type": "value",
+    "axisLine": {
+      "show": false
+    },
+    "splitLine": {
+      "show": false
+    }
+  },
+  "yAxis": {
+    "type": "category",
+    "inverse": true,
+    "data": [{
+      "value": "发病数（例）",
+      "textStyle": {
+        "color": "#fff"
+      }
+    },{
+      "value": "死亡数（例）",
+      "textStyle": {
+        "color": "#fff"
+      }
+    }],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    }
+  },
+  "series": [{
+    "type": "bar",
+    "data": [210000, 120],
+    "barWidth": 10,
+    "barMinHeight": 50,
+    "barGap": 10,
+    "barCategoryGap": 10,
+    "label": {
+      "normal": {
+        "show": true,
+        "position": "right",
+        "color": "#fff"
+      }
+    },
+    "itemStyle": {
+      "normal": {"color": "#dd7473"}
+    }
+  }]
+}
