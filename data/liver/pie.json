@@ -85,8 +85,8 @@
             "color":"#fff"
           },
           "smooth":0.2,
-          "length":10,
-          "length2":20
+          "length":7,
+          "length2":5
         }
       },
       "label":{

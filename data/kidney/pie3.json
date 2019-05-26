@@ -1,27 +1,16 @@
 {
-  "title":{
-    "text":"Customized Pie",
-    "left":"center",
-    "top":20,
-    "textStyle":{
-      "color":"#ccc"
-    }
-  },
   "tooltip":{
     "trigger":"item",
     "formatter":"{a} <br/>{b} : {c} ({d}%)"
   },
-  "visualMap":{
-    "show":false,
-    "min":80,
-    "max":600,
-    "inRange":{
-      "colorLightness":[
-        0,
-        1
-      ]
+  "legend": {
+    "data": ["糖科病肾病","高血压肾病","硬阻性肾病","肾小球肾炎","其他病因"],
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 10
     }
   },
+  "color": ["#d76662", "#ba332f", "#8b2523", "#832220", "#621b19"],
   "series":[
     {
       "name":"访问来源",
@@ -34,23 +23,78 @@
       "data":[
         {
           "value":21.5,
-          "name":"其他病因"
+          "name":"其他病因",
+          "itemStyle": {
+            "normal": {
+              "color": "#d76662"
+            }
+          },
+          "label": {
+            "position": "outside",
+            "color": "#fff",
+            "fontSize": "10",
+            "formatter": "{c}%"
+          }
         },
         {
           "value":15.1,
-          "name":"肾小球肾炎"
+          "name":"肾小球肾炎",
+          "itemStyle": {
+            "normal": {
+              "color": "#ba332f"
+            }
+          },
+          "label": {
+            "position": "outside",
+            "color": "#fff",
+            "fontSize": "10",
+            "formatter": "{c}%"
+          }
         },
         {
           "value":15.6,
-          "name":"硬阻性肾病"
+          "name":"硬阻性肾病",
+          "itemStyle": {
+            "normal": {
+              "color": "#8b2523"
+            }
+          },
+          "label": {
+            "position": "outside",
+            "color": "#fff",
+            "fontSize": "10",
+            "formatter": "{c}%"
+          }
         },
         {
           "value":20.8,
-          "name":"高血压肾病"
+          "name":"高血压肾病",
+          "itemStyle": {
+            "normal": {
+              "color": "#832220"
+            }
+          },
+          "label": {
+            "position": "outside",
+            "color": "#fff",
+            "fontSize": "10",
+            "formatter": "{c}%"
+          }
         },
         {
           "value":27.0,
-          "name":"糖科病肾病"
+          "name":"糖科病肾病",
+          "itemStyle": {
+            "normal": {
+              "color": "#621b19"
+            }
+          },
+          "label": {
+            "position": "outside",
+            "color": "#fff",
+            "fontSize": "10",
+            "formatter": "{c}%"
+          }
         }
       ],
       "roseType":"radius",
@@ -67,8 +111,8 @@
             "color":"rgba(255, 255, 255, 0.3)"
           },
           "smooth":0.2,
-          "length":10,
-          "length2":20
+          "length":7,
+          "length2":5
         }
       },
       "itemStyle":{

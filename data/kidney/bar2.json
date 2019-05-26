@@ -1,16 +1,56 @@
 {
-  "title": { "text": "慢性肾脏疾病与心血管疾病关系密切" },
-  "tooltip": {},
+  "title": {
+    "text": "慢性肾脏疾病与心血管疾病关系密切",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 12,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "top": "10",
+    "left": "50%"
+  },
+  "grid": {
+    "left": 45
+  },
   "xAxis": {
-    "type": "value"
+    "type": "value",
+    "axisLine": {
+      "show": false
+    },
+    "splitLine": {
+      "color": "#fff"
+    },
+    "axisLabel": {
+      "textStyle": {
+        "color": "#fff"
+      }
+    }
   },
   "yAxis": {
     "type": "category",
     "inverse": true,
-    "data": ["卒中","心衰","冠心病"]
+    "data": ["卒中","心衰","冠心病"],
+    "axisLabel": {
+      "textStyle": {
+        "color": "#fff"
+      }
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    }
   },
   "series": [{
     "type": "bar",
-    "data": [13, 16, 18]
+    "barWidth": "40%",
+    "data": [13, 16, 18],
+    "itemStyle": {
+      "color": "#51a3a3"
+    }
   }]
 }

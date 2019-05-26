@@ -15,7 +15,7 @@
         </div>
 
         <div class="clearfix">
-          <div class="pull-left" style="width:35%">
+          <div class="pull-left" style="width:35%;border-right: 1px solid #fff">
             <ChartBar
               :id="'bar1'"
               :width=300

@@ -1,11 +1,35 @@
 {
   "tooltip": {},
   "xAxis": {
-    "data": ["全世界患肾脏疾病人数","每年死亡人数","中国患病人数"]
+    "data": ["全世界患肾\n脏疾病人数","每年死亡人数","中国患病人数"],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "rotate": 45,
+      "textStyle": {
+        "color": "#fff"
+      }
+    }
   },
-  "yAxis": {},
+  "yAxis": {
+    "show": false
+  },
   "series": [{
     "type": "bar",
-    "data": [8.5, 0.042, 1.2]
+    "data": [8.5, 0.042, 1.2],
+    "barWidth": "40%",
+    "label": {
+      "show": true,
+      "color": "#fff",
+      "position": "top",
+      "formatter": "{c}亿人"
+    },
+    "itemStyle": {
+      "barBorderRadius": 3
+    }
   }]
 }

@@ -1,6 +1,14 @@
 {
   "title": {
-    "text": "中国患病率"
+    "text": "中国患病率",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "left": "50%",
+    "bottom": 20
   },
   "tooltip":{
     "trigger":"item",
@@ -45,7 +53,10 @@
         {
           "value":10.8
         },{
-          "value":89.2
+          "value":89.2,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }
