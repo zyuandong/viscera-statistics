@@ -2,20 +2,64 @@
   "title": {
     "text": "乙型肝炎",
     "textStyle":{
-      "color":"#fff"
-    }
+      "color":"#fff",
+      "fontSize": 12,
+      "fontWeight": 400
+    },
+    "top": 30
+  },
+  "grid": {
+    "left": 85,
+    "bottom": 20
   },
   "tooltip": {},
   "xAxis": {
-    "type": "value"
+    "show": false,
+    "type": "value",
+    "axisLine": {
+      "show": false
+    },
+    "splitLine": {
+      "show": false
+    }
   },
   "yAxis": {
     "type": "category",
     "inverse": true,
-    "data": ["发病数（例）","死亡数（例）"]
+    "data": [{
+      "value": "发病数（例）",
+      "textStyle": {
+        "color": "#fff"
+      }
+    },{
+      "value": "死亡数（例）",
+      "textStyle": {
+        "color": "#fff"
+      }
+    }],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    }
   },
   "series": [{
     "type": "bar",
-    "data": [1001000, 42500]
+    "data": [1001000, 425],
+    "barWidth": 10,
+    "barMinHeight": 50,
+    "barGap": 10,
+    "barCategoryGap": 10,
+    "label": {
+      "normal": {
+        "show": true,
+        "position": "right",
+        "color": "#fff"
+      }
+    },
+    "itemStyle": {
+      "normal": {"color": "#dd7473"}
+    }
   }]
 }

@@ -2,26 +2,26 @@
   "title":{
     "text":"不同类型病毒性肝炎占比",
     "left":"center",
-    "top":20,
+    "top":0,
     "textStyle":{
-      "color":"#fff"
+      "color":"#fff",
+      "fontSize": 12,
+      "fontWeight": 400
     }
   },
+  "legend": {
+    "data": ["甲型肝炎", "乙型肝炎", "丙型肝炎", "戊型肝炎", "其他"],
+    "textStyle": {
+      "color": "#fff"
+    },
+    "top": 20
+  },
+  "color": ["#eaa84c", "#dd7473", "#97b551", "#db2828", "#51a3a3"],
   "tooltip":{
     "trigger":"item",
     "formatter":"{a} <br/>{b} : {c} ({d}%)"
   },
-  "visualMap":{
-    "show":false,
-    "min":2,
-    "max":100,
-    "inRange":{
-      "colorLightness":[
-        0,
-        1
-      ]
-    }
-  },
+
   "series":[
     {
       "name":"访问来源",
@@ -33,49 +33,66 @@
       ],
       "data":[
         {
-          "value":77,
-          "name":"甲型肝炎"
+          "value":2,
+          "name":"甲型肝炎",
+          "itemStyle": {
+            "normal": {
+              "color": "#eaa84c"
+            }
+          }
         },
         {
-          "value":16,
-          "name":"乙型肝炎"
+          "value":10,
+          "name":"乙型肝炎",
+          "itemStyle": {
+            "normal": {
+              "color": "#dd7473"
+            }
+          }
+        },
+        {
+          "value":8,
+          "name":"丙型肝炎",
+          "itemStyle": {
+            "normal": {
+              "color": "#97b551"
+            }
+          }
         },
         {
           "value":2,
-          "name":"丙型肝炎"
+          "name":"戊型肝炎",
+          "itemStyle": {
+            "normal": {
+              "color": "#db2828"
+            }
+          }
         },
         {
           "value":3,
-          "name":"戊型肝炎"
-        },
-        {
-          "value":2,
-          "name":"其他"
+          "name":"其他",
+          "itemStyle": {
+            "normal": {
+              "color": "#51a3a3"
+            }
+          }
         }
       ],
       "roseType":"radius",
-      "label":{
-        "normal":{
-          "textStyle":{
-            "color":"rgba(255, 255, 255, 0.3)"
-          }
-        }
-      },
       "labelLine":{
         "normal":{
           "lineStyle":{
-            "color":"rgba(255, 255, 255, 0.3)"
+            "color":"#fff"
           },
           "smooth":0.2,
           "length":10,
           "length2":20
         }
       },
-      "itemStyle":{
+      "label":{
         "normal":{
-          "color":"#c23531",
-          "shadowBlur":200,
-          "shadowColor":"rgba(0, 0, 0, 0.5)"
+          "color":"#fff",
+          "formatter": "{d}%"
         }
       },
       "animationType":"scale",

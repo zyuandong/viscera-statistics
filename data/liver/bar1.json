@@ -1,19 +1,97 @@
 {
-  "title": {
-    "show": false,
-    "text": "男性心率/分钟"
-  },
   "tooltip": {},
+  "grid": {
+    "left": 110
+  },
   "xAxis": {
-    "type": "value"
+    "show": false,
+    "type": "value",
+    "axisLine": {
+    },
+    "splitLine": {
+      "show": false
+    }
   },
   "yAxis": {
     "type": "category",
-    "data": ["乙肝五项对照表","肝胆湿热","肝硬化","乙肝","肝癌早起症状", "脂肪肝", "肝癌", "肝火旺", "乙肝表面抗体阳性", "肝脏不好的症状"]
+    "inverse": true,
+    "data": [
+      {
+        "value": "乙肝五项对照表",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "肝胆湿热",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "肝硬化",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "乙肝",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "肝癌早起症状",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "脂肪肝",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "肝癌",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "肝火旺",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "乙肝表面抗体阳性",
+        "textStyle": {
+          "color": "#fff"
+        }
+      },{
+        "value": "肝脏不好的症状",
+        "textStyle": {
+          "color": "#fff"
+        }
+      }],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    }
   },
   "series": [{
     "name": "销量",
     "type": "bar",
-    "data": [446, 416, 353, 347, 323, 275, 217, 146, 134, 103]
+    "barWidth": "40%",
+    "data": [446, 416, 353, 347, 323, 275, 217, 146, 134, 103],
+    "label": {
+      "normal": {
+        "show": true,
+        "color": "#fff",
+        "position": "right",
+        "formatter": "{c}万"
+      }
+    },
+    "itemStyle": {
+      "normal": {
+        "color": "#DE8F6C",
+        "barBorderRadius": 30
+      }
+    }
   }]
 }

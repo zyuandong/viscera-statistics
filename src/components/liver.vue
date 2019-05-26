@@ -50,7 +50,7 @@
           <ChartBar
             :id="'bar2'"
             :width=100
-            :height=400
+            :height=300
             :data="bar2"
           >
           </ChartBar>
@@ -67,8 +67,16 @@
           <ChartBar
             :id="'bar3'"
             :width=100
-            :height=200
+            :height=150
             :data="bar3"
+          >
+          </ChartBar>
+
+          <ChartBar
+            :id="'bar4'"
+            :width=100
+            :height=150
+            :data="bar4"
           >
           </ChartBar>
         </div>
@@ -88,6 +96,7 @@
         bar1: {},
         bar2: {},
         bar3: {},
+        bar4: {},
         pie: {},
       }
     },
@@ -98,25 +107,26 @@
     created() {
       Axios.get('./data/liver/bar1.json')
         .then(resp => {
-          console.log(resp.data)
           this.bar1 = resp.data;
         });
 
       Axios.get('./data/liver/bar2.json')
         .then(resp => {
-          console.log(resp.data)
           this.bar2 = resp.data;
         });
 
       Axios.get('./data/liver/bar3.json')
         .then(resp => {
-          console.log(resp.data)
           this.bar3 = resp.data;
+        });
+
+      Axios.get('./data/liver/bar4.json')
+        .then(resp => {
+          this.bar4 = resp.data
         });
 
       Axios.get('./data/liver/pie.json')
         .then(resp => {
-          console.log(resp.data)
           this.pie = resp.data;
         });
     }

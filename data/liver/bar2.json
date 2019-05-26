@@ -1,29 +1,93 @@
 {
-  "title": { "text": "病毒性肝炎占比" },
+  "title": {
+    "text": "病毒性肝炎占比",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "top": "5%",
+    "right": "20%" },
   "tooltip": {},
   "legend": {
     "show": false,
     "data": ["type1", "type2", "type3"]
   },
   "xAxis": {
-    "type": "value"
+    "type": "value",
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    },
+    "splitLine": {
+      "show": false
+    }
   },
   "yAxis": {
     "type": "category",
     "inverse": true,
-    "data": ["全球","欧美","中国"]
+    "data": ["全球","欧美","中国"],
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    }
   },
   "series": [{
     "name": "type1",
     "type": "bar",
-    "data": [13,0,4]
+    "barWidth": "30%",
+    "data": [130000,0,40000],
+    "label": {
+      "normal": {
+        "show": true,
+        "color": "#fff",
+        "position": "right",
+        "formatter": "{c}万"
+      }
+    },
+    "itemStyle": {
+      "normal": {
+        "color": "#DE8F6C"
+      }
+    }
   },{
     "name": "type2",
     "type": "bar",
-    "data": [0,5,0.93]
+    "barWidth": "30%",
+    "data": [0,50000,9300],
+    "label": {
+      "normal": {
+        "show": true,
+        "color": "#fff",
+        "position": "right",
+        "formatter": "{c}万"
+      }
+    },
+    "itemStyle": {
+      "normal": {
+        "color": "#97b551"
+      }
+    }
   },{
     "name": "type3",
     "type": "bar",
-    "data": [0, 0, 0.13]
+    "barWidth": "30%",
+    "data": [0, 0, 1300],
+    "label": {
+      "normal": {
+        "show": true,
+        "color": "#fff",
+        "position": "right",
+        "formatter": "{c}万"
+      }
+    },
+    "itemStyle": {
+      "normal": {
+        "color": "#97b551"
+      }
+    }
   }]
 }
