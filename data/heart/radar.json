@@ -1,9 +1,4 @@
 {
-  "legend":{
-    "show": false,
-    "data":[
-      "预算分配（Allocated Budget）"]
-  },
   "radar":{
     "name":{
       "textStyle":{
@@ -11,6 +6,7 @@
         "borderRadius":3
       }
     },
+    "radius": "50%",
     "splitNumber": 3,
     "splitLine": {
       "lineStyle": {
@@ -67,12 +63,12 @@
       ],
       "itemStyle": {
         "normal": {
-          "color": "#F9713C"
+          "color": "#2ec7c9"
         }
       },
       "areaStyle": {
         "normal": {
-          "opacity": 0.3
+          "opacity": 0.7
         }
       }
     }

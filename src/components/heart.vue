@@ -21,7 +21,7 @@
         </div>
 
         <div class="clearfix">
-          <div class="pull-left" style="width:18%;">
+          <div class="pull-left" style="width:12%;">
             <div style="font-size:18px; color:#37fffe;">总心跳动</div>
             <div>
               约
@@ -29,7 +29,7 @@
               次
             </div>
           </div>
-          <div class="pull-left" style="width:35%;">
+          <div class="pull-left" style="width:38%;">
             <!--:key 为此组件的特殊标识，不能用作向子组件传值-->
             <ChartBar
               :id="'bar1'"
@@ -38,7 +38,7 @@
               :data="bar1"
             ></ChartBar>
           </div>
-          <div class="pull-left" style="width:35%">
+          <div class="pull-left" style="width:38%">
             <ChartBar
               :id="'bar2'"
               :width=300
@@ -46,7 +46,7 @@
               :data="bar2"
             ></ChartBar>
           </div>
-          <div class="pull-left legend" style="width:12%">
+          <div class="pull-left legend" style="width:12%;padding: 30px 40px 0 0;">
             <div class="clearfix">
               <div class="pull-left text">运动员</div>
               <div class="pull-left block color-ydy"></div>
@@ -94,7 +94,7 @@
             <ChartRadar
               :id="'radar'"
               :width=400
-              :height=400
+              :height=250
               :data="radar"
             ></ChartRadar>
           </div>
@@ -166,33 +166,32 @@
           <div class="pull-left pie-text" style="width:12%">
             了解糖尿病死亡因素为心脏疾病人数比例
           </div>
-
         </div>
 
         <div class="clearfix statistics-box">
-          <div style="width:65%;margin:0 auto;">
+          <div style="width:80%;margin:0 auto;">
             <div class="pull-left item" style="width: 15%">
               <div class="title">血压</div>
-              <div class="num" style="color:#37fffe; font-size:20px;">120/80</div>
+              <div class="content num" style="color:#37fffe; font-size:20px;">120/80</div>
             </div>
 
-            <div class="pull-left item" style="width: 15%">
+            <div class="pull-left item" style="width: 13%">
               <div class="title">体重指数</div>
-              <div class="num" style="color:#37fffe; font-size:20px;">18.9</div>
+              <div class="content num" style="color:#37fffe; font-size:20px;">18.9</div>
             </div>
 
             <div class="pull-left item" style="width: 25%">
               <div class="title">胆固醇水平</div>
-              <div class="num" style="color:#37fffe; font-size:20px;">
+              <div class="content num" style="color:#37fffe; font-size:20px;">
                 < 200hg/分升
               </div>
             </div>
 
-            <div class="pull-left item" style="width: 15%">
+            <div class="pull-left item" style="width: 17%">
               <div class="title">血糖</div>
-              <div class="num">
+              <div class="content">
                 <div style="color:#37fffe;">血糖蛋白空腹</div>
-                <div style="color:#37fffe; font-size:20px;">
+                <div class="num" style="color:#37fffe; font-size:20px;">
                   < 6
                 </div>
               </div>
@@ -200,16 +199,16 @@
 
             <div class="pull-left item" style="width: 30%">
               <div class="title">腰围</div>
-              <div class="num">
+              <div class="content">
                 <div class="pull-left" style="width: 50%;">
                   <div style="color:#37fffe;">男性</div>
-                  <div style="color:#37fffe; font-size:20px;">
+                  <div class="num" style="color:#37fffe; font-size:20px;">
                     < 40英寸
                   </div>
                 </div>
                 <div class="pull-left" style="width: 50%;">
                   <div style="color:#37fffe;">女性</div>
-                  <div style="color:#37fffe; font-size:20px;">
+                  <div class="num" style="color:#37fffe; font-size:20px;">
                     < 35英寸
                   </div>
                 </div>
@@ -312,6 +311,9 @@
   #heart {
 
     .radar-pie-box {
+      &>div {
+        margin: 10px 0;
+      }
 
       .pie-text {
         padding: 35px 0;
@@ -357,11 +359,12 @@
     }
 
     .statistics-box {
+      padding: 30px 0 0;
       .item {
         padding: 0 18px;
-        border-right: 1px solid #37fffe;
+        border-right: 1px solid #083F54;
       }
-      .num {
+      .content {
         height: 70px;
         color: #37fffe;
         padding: 20px 0 70px;
