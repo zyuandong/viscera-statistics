@@ -1,15 +1,44 @@
 {
   "title": {
-    "text": "脾梗男女占比"
+    "text": "脾梗男女占比",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "top": "5%",
+    "left": 60
   },
   "tooltip": {},
   "xAxis": {
-    "data": ["男","女"]
+    "data": ["男","女"],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "color": "#fff"
+    }
   },
-  "yAxis": {},
+  "yAxis": {
+    "show": false
+  },
   "series": [{
-    "name": "销量",
     "type": "bar",
-    "data": [85, 52]
+    "data": [85, 52],
+    "barWidth": "40%",
+    "itemStyle": {
+      "color": "#51a3a3",
+      "barBorderRadius": 3
+    },
+    "label": {
+      "show": true,
+      "position": "top",
+      "color": "#fff",
+      "formatter": "{c}人"
+    }
   }]
 }

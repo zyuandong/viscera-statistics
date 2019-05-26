@@ -43,7 +43,7 @@
               :data="bar1"
             ></ChartBar>
           </div>
-          <div class="pull-left" style="width:35%">
+          <div class="pull-left" style="width:38%">
             <ChartBar
               :id="'bar2'"
               :width=300
@@ -51,7 +51,7 @@
               :data="bar2"
             ></ChartBar>
           </div>
-          <div class="pull-left" style="width:15%">
+          <div class="pull-left" style="width:17%">
             <ChartBar
               :id="'bar3'"
               :width=300
@@ -59,12 +59,12 @@
               :data="bar3"
             ></ChartBar>
           </div>
-          <div class="pull-left" style="width:30%">
+          <div class="pull-left" style="width:25%">
             <div class="pull-left" style="width:50%">
               <ChartPie
                 :id="'pie2'"
                 :width=100
-                :height=100
+                :height=150
                 :data="pie2"
               ></ChartPie>
             </div>
@@ -72,23 +72,23 @@
               <ChartPie
                 :id="'pie3'"
                 :width=100
-                :height=100
+                :height=150
                 :data="pie3"
               ></ChartPie>
             </div>
             <div class="pull-left" style="width:50%">
               <ChartPie
                 :id="'pie4'"
-                :width=100
-                :height=100
+                :width=70
+                :height=150
                 :data="pie4"
               ></ChartPie>
             </div>
             <div class="pull-left" style="width:50%">
               <ChartPie
                 :id="'pie5'"
-                :width=100
-                :height=100
+                :width=70
+                :height=150
                 :data="pie5"
               ></ChartPie>
             </div>

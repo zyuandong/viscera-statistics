@@ -1,6 +1,15 @@
 {
   "title": {
-    "text": "年龄最大"
+    "text": "年龄最大",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 12,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "bottom": 0,
+    "left": "45%",
+    "right": 20
   },
   "tooltip":{
     "trigger":"item",
@@ -9,10 +18,7 @@
   "legend":{
     "show": false,
     "orient":"vertical",
-    "x":"left",
-    "data":[
-      "直接访问"
-    ]
+    "x":"left"
   },
   "series":[
     {
@@ -43,7 +49,10 @@
       },
       "data":[
         {
-          "value":83
+          "value":83,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }

@@ -1,11 +1,58 @@
 {
   "tooltip": {},
   "xAxis": {
-    "data": ["脾梗死亡例","脾梗治愈率","脾梗死亡率"]
+    "data": ["脾梗\n死亡例","脾梗\n治愈率","脾梗\n死亡率"],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "color": "#fff",
+      "rotate": 45,
+      "align": "right"
+    }
   },
-  "yAxis": {},
+  "yAxis": {
+    "show": false
+  },
   "series": [{
     "type": "bar",
-    "data": [137, 88.7, 11.3]
+    "barWidth": "40%",
+    "data": [{
+      "value": 137,
+      "itemStyle": {
+        "color": "#ead84c",
+        "barBorderRadius": 3
+      },
+      "label": {
+        "show": true,
+        "color": "#fff",
+        "position": "top"
+      }
+    }, {
+      "value": 88.7,
+      "itemStyle": {
+        "color": "#2ec7c9",
+        "barBorderRadius": 3
+      },
+      "label": {
+        "show": true,
+        "color": "#fff",
+        "position": "top"
+      }
+    }, {
+      "value": 11.3,
+      "itemStyle": {
+        "color": "#2ec7c9",
+        "barBorderRadius": 3
+      },
+      "label": {
+        "show": true,
+        "color": "#fff",
+        "position": "top"
+      }
+    }]
   }]
 }

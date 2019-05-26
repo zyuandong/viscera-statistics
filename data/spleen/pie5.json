@@ -1,6 +1,19 @@
 {
   "title": {
-    "text": ">=60岁占比"
+    "text": ">=60岁占比",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 12,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "bottom": 0,
+    "left": "45%",
+    "right": 20
+  },
+  "grid": {
+    "top": 0,
+    "bottom": 50
   },
   "tooltip":{
     "trigger":"item",
@@ -9,10 +22,7 @@
   "legend":{
     "show": false,
     "orient":"vertical",
-    "x":"left",
-    "data":[
-      "直接访问"
-    ]
+    "x":"left"
   },
   "series":[
     {
@@ -43,9 +53,15 @@
       },
       "data":[
         {
-          "value":27.7
+          "value":27.7,
+          "itemStyle": {
+            "color": "#e8ff00"
+          }
         },{
-          "value":72.3
+          "value":72.3,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }

@@ -1,6 +1,13 @@
 {
   "title": {
-    "text": "最大免疫系统占淋巴组织总量"
+    "text": "最大免疫系统\n占淋巴组织总量",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "right": 20
   },
   "tooltip":{
     "trigger":"item",
@@ -43,9 +50,15 @@
       },
       "data":[
         {
-          "value":25
+          "value":25,
+          "itemStyle": {
+            "color": "#db2828"
+          }
         },{
-          "value":75
+          "value":75,
+          "itemStyle": {
+            "color": "#033348"
+          }
         }
       ]
     }

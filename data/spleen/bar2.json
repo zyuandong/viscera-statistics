@@ -1,14 +1,58 @@
 {
   "title": {
-    "text": "脾梗病发占比"
+    "text": "脾梗病发占比",
+    "textStyle": {
+      "color": "#fff",
+      "fontSize": 14,
+      "fontWeight": 400
+    },
+    "textAlign": "center",
+    "top": "5%",
+    "right": "20%"
   },
   "tooltip": {},
   "xAxis": {
-    "data": ["循环系统疾病","血液系统疾病","消化系统疾病","自身免疫系统疾病","感染系统疾病"]
+    "data": ["循环系统\n疾病","血液系统\n疾病","消化系统\n疾病","自身免疫系统\n疾病","感染系统\n疾病"],
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "rotate": 45
+    }
   },
-  "yAxis": {},
+  "yAxis": {
+    "axisLine": {
+      "lineStyle": {
+        "color": "#fff"
+      }
+    },
+    "splitLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    }
+  },
   "series": [{
     "type": "bar",
-    "data": [29.8, 21.4, 21.4, 5.3, 6.1]
+    "data": [29.8, 21.4, 21.4, 5.3, 6.1],
+    "barWidth": "40%",
+    "itemStyle": {
+      "normal": {
+        "color": "#51a3a3",
+        "barBorderRadius": 3
+      }
+    },
+    "label": {
+      "show": true,
+      "position": "top",
+      "color": "#fff",
+      "formatter": "{c}%"
+    }
   }]
 }

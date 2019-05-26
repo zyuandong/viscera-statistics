@@ -1,15 +1,39 @@
 {
   "tooltip": {},
   "xAxis": {
-    "type": "value"
+    "type": "value",
+    "show": false
+  },
+  "grid": {
+    "left": 70
   },
   "yAxis": {
     "type": "category",
     "inverse": true,
-    "data": ["左上腹压痛","腹肌紧张","腹膜刺激征","腹部肿块"]
+    "data": ["左上腹压痛","腹肌紧张","腹膜刺激征","腹部肿块"],
+    "axisLine": {
+      "show": false
+    },
+    "axisTick": {
+      "show": false
+    },
+    "axisLabel": {
+      "color": "#fff"
+    }
   },
   "series": [{
     "type": "bar",
-    "data": [35.7, 33.7, 28.4, 48.6]
+    "barWidth": "40%",
+    "data": [35.7, 33.7, 28.4, 48.6],
+    "itemStyle": {
+      "color": "#51a3a3",
+      "barBorderRadius": 3
+    },
+    "label": {
+      "show": true,
+      "position": "right",
+      "color": "#fff",
+      "formatter": "{c}%"
+    }
   }]
 }
