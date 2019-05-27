@@ -113,8 +113,11 @@
           </div>
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix part-3">
           <div class="pull-left" style="width:50%">
+            <div class="clearfix">
+              <span class="title">疾状</span>
+            </div>
             <ChartBar
               :id="'bar4'"
               :width=300
@@ -123,6 +126,9 @@
             ></ChartBar>
           </div>
           <div class="pull-left" style="width:50%">
+            <div class="clearfix">
+              <span class="title">体状</span>
+            </div>
             <ChartBar
               :id="'bar5'"
               :width=300
@@ -231,6 +237,16 @@
             color: #37fffe;
           }
         }
+      }
+    }
+
+    .part-3 {
+      padding: 60px 0 0 0;
+      .title {
+        display: inline-block;
+        background-color: #dd7473;
+        padding: 3px 10px;
+        border-radius: 3px;
       }
     }
   }
