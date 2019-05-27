@@ -72,6 +72,11 @@
     },
     "axisTick": {
       "show": false
+    },
+    "axisLabel": {
+      "textStyle": {
+        "fontSize": 10
+      }
     }
   },
   "series": [{
@@ -84,6 +89,7 @@
         "show": true,
         "color": "#fff",
         "position": "right",
+        "fontSize": 10,
         "formatter": "{c}万"
       }
     },

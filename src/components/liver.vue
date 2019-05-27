@@ -16,17 +16,137 @@
           <span class="sub-title-line w-10"></span>
         </div>
 
-        <div class="clearfix">
-          <div class="pull-left" style="width:20%">
-            乙肝
+        <div class="clearfix part-1">
+          <div class="pull-left" style="width:22%;padding: 40px 0 0">
+            <div class="item">乙肝</div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/red50.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box red">
+                <span class="bar" style="width: 0%"></span>
+              </span>
+              <span class="text">0%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/red49.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box red">
+                <span class="bar" style="width:56%"></span>
+              </span>
+              <span class="text">56%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/red24.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box red">
+                <span class="bar" style="width:37%"></span>
+              </span>
+              <span class="text">37%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/red18.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box red">
+                <span class="bar" style="width:7%"></span>
+              </span>
+              <span class="text">7%</span>
+            </div>
           </div>
-          <div class="pull-left" style="width:20%">
-            肝硬化
+          <div class="pull-left" style="width:22%;padding: 40px 0 0">
+            <div class="item">肝硬化</div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/blue50.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box blue">
+                <span class="bar" style="width:2%"></span>
+              </span>
+              <span class="text">2%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/blue49.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box blue">
+                <span class="bar" style="width:63%"></span>
+              </span>
+              <span class="text">63%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/blue24.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box blue">
+                <span class="bar" style="width:28%"></span>
+              </span>
+              <span class="text">28%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/blue18.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box blue">
+                <span class="bar" style="width:6%"></span>
+              </span>
+              <span class="text">6%</span>
+            </div>
           </div>
-          <div class="pull-left" style="width:20%">
-            肝癌
+          <div class="pull-left" style="width:22%;padding: 40px 0 0">
+            <div class="item">肝癌</div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/green50.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box green">
+                <span class="bar" style="width:1%"></span>
+              </span>
+              <span class="text">1%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/green49.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box green">
+                <span class="bar" style="width:63%"></span>
+              </span>
+              <span class="text">63%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/green24.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box green">
+                <span class="bar" style="width:28%"></span>
+              </span>
+              <span class="text">28%</span>
+            </div>
+            <div class="item">
+              <span class="img-box">
+                <img src="./../assets/images/liver/green18.png" alt="">
+                <img src="./../assets/images/liver/tip.png" alt="">
+              </span>
+              <span class="progress-box green">
+                <span class="bar" style="width:8%"></span>
+              </span>
+              <span class="text">8%</span>
+            </div>
           </div>
-          <div class="pull-left" style="width:40%">
+          <div class="pull-left" style="width:34%;">
             <ChartBar
               :id="'bar1'"
               :width=100
@@ -135,6 +255,67 @@
 
 <style lang="scss">
   #liver {
+    .part-1 {
+      .item {
+        padding: 25px 10px 0 0;
+        .img-box {
+          img:first-child {
+            width: 27px;
+            height: 30px;
+          }
 
+          img:last-child {
+            width: 27px;
+            height: 30px;
+          }
+        }
+
+        .progress-box {
+          display: inline-block;
+          width: calc(100% - 95px);
+          height: 30px;
+
+          margin: 0 0 0 -3px;
+
+          &.red {
+            border: 1px solid #dd7473;
+
+            .bar {
+              display: inline-block;
+              height: 100%;
+              background-color: #dd7473;
+            }
+          }
+
+          &.blue {
+            border: 1px solid #2ec7c9;
+
+            .bar {
+              display: inline-block;
+              height: 100%;
+              background-color: #2ec7c9;
+            }
+          }
+
+          &.green {
+            border: 1px solid #97b551;
+
+            .bar {
+              display: inline-block;
+              height: 100%;
+              background-color: #97b551;
+            }
+          }
+        }
+
+        .text {
+          display: inline-block;
+          width: 35px;
+          float: right;
+          text-align: left;
+          padding: 7px 0;
+        }
+      }
+    }
   }
 </style>
