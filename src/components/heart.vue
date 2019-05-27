@@ -254,21 +254,30 @@
     created() {
       console.log(1);
 
-      Axios.get('./data/heart/bar1.json')
+      let instance = Axios.create({
+        baseURL: '/',
+        timeout: 1000,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Credentials': true
+        }
+      });
+
+      instance.get('data/heart/bar1.json')
         .then(response => {
           this.bar1 = response.data;
         })
         .catch(error => {
         });
 
-      Axios.get('./data/heart/bar2.json')
+      Axios.get('data/heart/bar2.json')
         .then(response => {
           this.bar2 = response.data;
         })
         .catch(error => {
         });
 
-      Axios.get('./data/heart/radar.json')
+      Axios.get('data/heart/radar.json')
         .then(resp => {
           this.radar = resp.data;
         });
