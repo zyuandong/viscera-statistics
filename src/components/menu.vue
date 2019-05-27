@@ -45,6 +45,7 @@
 
       //background-color: #000;
       position: relative;
+      overflow: hidden;
     }
 
     img {
