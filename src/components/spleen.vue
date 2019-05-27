@@ -15,7 +15,7 @@
           <span class="sub-title-line w-6"></span>
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix part-1">
           <div class="pull-left" style="width:45%">
             <ChartPie
               :id="'pie1'"
@@ -24,7 +24,25 @@
               :data="pie1"
             ></ChartPie>
           </div>
-          <div class="pull-left" style="width:55%"></div>
+          <div class="pull-left message-box" style="width:55%">
+            <div class="title">正常大小</div>
+            <div class="item">
+              <span class="text">长</span>
+              <span class="num">10cm-12cm</span>
+            </div>
+            <div class="item">
+              <span class="text">宽</span>
+              <span class="num">6cm-8cm</span>
+            </div>
+            <div class="item">
+              <span class="text">厚</span>
+              <span class="num">3cm-4cm</span>
+            </div>
+            <div class="item">
+              <span class="text">重</span>
+              <span class="num">110g-200g</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -192,3 +210,28 @@
     }
   }
 </script>
+
+<style lang="scss">
+  #spleen {
+
+    .part-1 {
+      .message-box {
+        padding: 60px 0 0 50px;
+        .title {
+          margin: 0 0 15px 0;
+        }
+        .item {
+          padding: 0 0 20px 0;
+
+          .text {
+            margin: 0 15px 0 0;
+          }
+
+          .num {
+            color: #37fffe;
+          }
+        }
+      }
+    }
+  }
+</style>
