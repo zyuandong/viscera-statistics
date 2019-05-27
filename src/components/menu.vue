@@ -1,7 +1,9 @@
 <template>
   <div id="menu">
     <div id="position">
-      <img class="logo" src="../assets/images/logo.png" alt="">
+      <router-link to="/">
+        <img class="logo" src="../assets/images/logo.png" alt="">
+      </router-link>
 
       <img class="shadow1" src="../assets/images/menu/shadow1.png" alt="">
       <img class="shadow2" src="../assets/images/menu/shadow2.png" alt="">
@@ -20,6 +22,12 @@
       <img class="image5" src="../assets/images/menu/image5.png" alt="">
       <img class="image6" src="../assets/images/menu/image6.png" alt="">
       <img class="image7" src="../assets/images/menu/image7.png" alt="">
+
+      <img class="word1" src="../assets/images/menu/word1.png" alt="">
+      <img class="word2" src="../assets/images/menu/word2.png" alt="">
+      <img class="word3" src="../assets/images/menu/word3.png" alt="">
+      <img class="word4" src="../assets/images/menu/word4.png" alt="">
+      <img class="word5" src="../assets/images/menu/word5.png" alt="">
 
       <router-link class="link1" to="/heart"></router-link>
       <router-link class="link2" to="/liver"></router-link>
@@ -151,6 +159,36 @@
       top: 775px;
       left: 175px;
       width: 100px;
+    }
+
+    .word1 {
+      width: 160px;
+      position: absolute;
+      top: 360px;
+      left: 1028px;
+    }
+    .word2 {
+      width: 100px;
+      position: absolute;
+      top: 235px;
+      left: 357px;
+    }
+    .word3 {
+      width: 120px;
+      position: absolute;
+      top: 240px;
+      left: 820px;
+    }
+    .word4 {
+      width: 80px;
+      position: absolute;
+      top: 420px;
+      left: 312px;
+    }
+    .word5 {
+      position: absolute;
+      top: 690px;
+      left: 530px;
     }
 
     .link1 {
