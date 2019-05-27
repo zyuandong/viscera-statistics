@@ -18,7 +18,14 @@
 
         <div class="clearfix part-1">
           <div class="pull-left" style="width:22%;padding: 40px 0 0">
-            <div class="item">乙肝</div>
+            <div class="item">
+              <div class="circle red">乙肝</div>
+              <div class="text">
+                男性占比53%
+                <br>
+                女性占比47%
+              </div>
+            </div>
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/red50.png" alt="">
@@ -61,7 +68,14 @@
             </div>
           </div>
           <div class="pull-left" style="width:22%;padding: 40px 0 0">
-            <div class="item">肝硬化</div>
+            <div class="item">
+              <div class="circle blue">肝硬化</div>
+              <div class="text">
+                男性占比57%
+                <br>
+                女性占比43%
+              </div>
+            </div>
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/blue50.png" alt="">
@@ -104,7 +118,14 @@
             </div>
           </div>
           <div class="pull-left" style="width:22%;padding: 40px 0 0">
-            <div class="item">肝癌</div>
+            <div class="item">
+              <div class="circle green">肝癌</div>
+              <div class="text">
+                男性占比57%
+                <br>
+                女性占比43%
+              </div>
+            </div>
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/green50.png" alt="">
@@ -273,7 +294,7 @@
         .progress-box {
           display: inline-block;
           width: calc(100% - 95px);
-          height: 30px;
+          height: 32px;
 
           margin: 0 0 0 -3px;
 
@@ -314,6 +335,33 @@
           float: right;
           text-align: left;
           padding: 7px 0;
+        }
+
+        .circle {
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          line-height: 48px;
+          text-align: center;
+          border-radius: 50%;
+          margin: 0 10px 0 0;
+
+          &.red {
+            border: 1px solid #dd7473;
+          }
+
+          &.blue {
+            border: 1px solid #2ec7c9;
+          }
+
+          &.green {
+            border: 1px solid #97b551;
+          }
+
+          +.text {
+            display: inline-block;
+            width: calc(100% - 65px);
+          }
         }
       }
     }
