@@ -17,13 +17,15 @@
       <img class="image7" src="../assets/images/menu/image7.png" alt="">
 
 
-      <img class="image7" src="../assets/images/menu/shadow1.png" alt="">
-      <img class="image7" src="../assets/images/menu/shadow2.png" alt="">
+      <img class="shadow1" src="../assets/images/menu/shadow1.png" alt="">
+      <img class="shadow2" src="../assets/images/menu/shadow2.png" alt="">
 
 
     </div>
   </div>
 </template>
+
+
 
 
 
@@ -41,7 +43,7 @@
       height: 900px;
       margin: 0 auto;
 
-      background-color: #eee;
+      //background-color: #000;
       position: relative;
     }
 
@@ -50,40 +52,55 @@
     }
 
     .image1 {
-      position: relative;
-      left: 75%;
-      top: 5%;
+      position: absolute;
+      top: 155px;
+      left: 1100px;
     }
 
     .image2 {
-      position: relative;
-      left: 65%;
-      top: 30%;
+      position: absolute;
+      top: 230px;
+      left: 1000px;
     }
     .image3 {
-      position: relative;
-      left: 50%;
-      top: 40%;
+      position: absolute;
+      top: 290px;
+      left: 875px;
     }
     .image4 {
-      position: relative;
-      left: 20%;
-      top: 35%;
+      position: absolute;
+      top: 345px;
+      left: 410px;
     }
     .image5 {
-      position: relative;
-      left: 45%;
-      top: 60%;
+      position: absolute;
+      top: 470px;
+      left: 685px;
     }
     .image6 {
-      position: relative;
-      left: 30%;
-      top: 80%;
+      width: 10%;
+      position: absolute;
+      top: 500px;
+      left: 390px;
     }
     .image7 {
-      position: relative;
-      left: 20%;
-      top: 90%;
+      position: absolute;
+      top: 665px;
+      left: 225px;
+    }
+
+    .shadow1 {
+      width: 1440px;
+      position: absolute;
+      top: 180px;
+      left: -11px;
+    }
+
+    .shadow2 {
+      width: 1440px;
+      position: absolute;
+      top: 175px;
+      left: 342px;
     }
   }
 </style>
