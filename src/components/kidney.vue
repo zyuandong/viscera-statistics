@@ -209,31 +209,381 @@
       ChartBar,
       ChartPie,
     },
+    mounted() {
+      this.bar1 = {
+        "tooltip": {},
+        "xAxis": {
+          "data": ["全世界患肾\n脏疾病人数","每年死亡人数","中国患病人数"],
+          "axisLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {
+            "rotate": 45,
+            "textStyle": {
+              "color": "#fff"
+            }
+          }
+        },
+        "yAxis": {
+          "show": false
+        },
+        "series": [{
+          "type": "bar",
+          "data": [8.5, 0.042, 1.2],
+          "barWidth": "40%",
+          "label": {
+            "show": true,
+            "color": "#fff",
+            "position": "top",
+            "formatter": "{c}亿人"
+          },
+          "itemStyle": {
+            "barBorderRadius": 3
+          }
+        }]
+      };
+      this.bar2 = {
+        "title": {
+          "text": "慢性肾脏疾病与心血管疾病关系密切",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 12,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "top": "10",
+          "left": "50%"
+        },
+        "grid": {
+          "left": 45
+        },
+        "xAxis": {
+          "type": "value",
+          "axisLine": {
+            "show": false
+          },
+          "splitLine": {
+            "color": "#fff"
+          },
+          "axisLabel": {
+            "textStyle": {
+              "color": "#fff"
+            }
+          }
+        },
+        "yAxis": {
+          "type": "category",
+          "inverse": true,
+          "data": ["卒中","心衰","冠心病"],
+          "axisLabel": {
+            "textStyle": {
+              "color": "#fff"
+            }
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLine": {
+            "lineStyle": {
+              "color": "#fff"
+            }
+          }
+        },
+        "series": [{
+          "type": "bar",
+          "barWidth": "40%",
+          "data": [13, 16, 18],
+          "itemStyle": {
+            "color": "#51a3a3"
+          }
+        }]
+      };
+      this.pie1 = {
+        "title": {
+          "text": "全世界发病率",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "left": "50%",
+          "bottom": 20
+        },
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend":{
+          "show": false,
+          "orient":"vertical",
+          "x":"left",
+          "data":[
+            "直接访问"
+          ]
+        },
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":[
+              "70%",
+              "80%"
+            ],
+            "avoidLabelOverlap":false,
+            "label":{
+              "normal":{
+                "show":false,
+                "position":"center"
+              },
+              "emphasis":{
+                "show":true,
+                "textStyle":{
+                  "fontSize":"30",
+                  "fontWeight":"bold"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "show":false
+              }
+            },
+            "data":[
+              {
+                "value": 12
+              },{
+                "value": 88,
+                "itemStyle": {
+                  "color": "#033348"
+                }
+              }
+            ]
+          }
+        ]
+      };
+      this.pie2 = {
+        "title": {
+          "text": "中国患病率",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "left": "50%",
+          "bottom": 20
+        },
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend":{
+          "show": false,
+          "orient":"vertical",
+          "x":"left",
+          "data":[
+            "直接访问"
+          ]
+        },
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":[
+              "70%",
+              "80%"
+            ],
+            "avoidLabelOverlap":false,
+            "label":{
+              "normal":{
+                "show":false,
+                "position":"center"
+              },
+              "emphasis":{
+                "show":true,
+                "textStyle":{
+                  "fontSize":"30",
+                  "fontWeight":"bold"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "show":false
+              }
+            },
+            "data":[
+              {
+                "value":10.8
+              },{
+                "value":89.2,
+                "itemStyle": {
+                  "color": "#033348"
+                }
+              }
+            ]
+          }
+        ]
+      };
+      this.pie3 = {
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b} : {c} ({d}%)"
+        },
+        "legend": {
+          "data": ["糖科病肾病","高血压肾病","硬阻性肾病","肾小球肾炎","其他病因"],
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 10
+          }
+        },
+        "color": ["#d76662", "#ba332f", "#8b2523", "#832220", "#621b19"],
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":"55%",
+            "center":[
+              "50%",
+              "50%"
+            ],
+            "data":[
+              {
+                "value":21.5,
+                "name":"其他病因",
+                "itemStyle": {
+                  "normal": {
+                    "color": "#d76662"
+                  }
+                },
+                "label": {
+                  "position": "outside",
+                  "color": "#fff",
+                  "fontSize": "10",
+                  "formatter": "{c}%"
+                }
+              },
+              {
+                "value":15.1,
+                "name":"肾小球肾炎",
+                "itemStyle": {
+                  "normal": {
+                    "color": "#ba332f"
+                  }
+                },
+                "label": {
+                  "position": "outside",
+                  "color": "#fff",
+                  "fontSize": "10",
+                  "formatter": "{c}%"
+                }
+              },
+              {
+                "value":15.6,
+                "name":"硬阻性肾病",
+                "itemStyle": {
+                  "normal": {
+                    "color": "#8b2523"
+                  }
+                },
+                "label": {
+                  "position": "outside",
+                  "color": "#fff",
+                  "fontSize": "10",
+                  "formatter": "{c}%"
+                }
+              },
+              {
+                "value":20.8,
+                "name":"高血压肾病",
+                "itemStyle": {
+                  "normal": {
+                    "color": "#832220"
+                  }
+                },
+                "label": {
+                  "position": "outside",
+                  "color": "#fff",
+                  "fontSize": "10",
+                  "formatter": "{c}%"
+                }
+              },
+              {
+                "value":27.0,
+                "name":"糖科病肾病",
+                "itemStyle": {
+                  "normal": {
+                    "color": "#621b19"
+                  }
+                },
+                "label": {
+                  "position": "outside",
+                  "color": "#fff",
+                  "fontSize": "10",
+                  "formatter": "{c}%"
+                }
+              }
+            ],
+            "roseType":"radius",
+            "label":{
+              "normal":{
+                "textStyle":{
+                  "color":"rgba(255, 255, 255, 0.3)"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "lineStyle":{
+                  "color":"rgba(255, 255, 255, 0.3)"
+                },
+                "smooth":0.2,
+                "length":7,
+                "length2":5
+              }
+            },
+            "itemStyle":{
+              "normal":{
+                "color":"#c23531",
+                "shadowBlur":200,
+                "shadowColor":"rgba(0, 0, 0, 0.5)"
+              }
+            },
+            "animationType":"scale",
+            "animationEasing":"elasticOut"
+          }
+        ]
+      };
+    },
     created() {
-      Axios.get('./data/kidney/bar1.json')
-        .then(resp => {
-          this.bar1 = resp.data
-        });
-
-      Axios.get('./data/kidney/bar2.json')
-        .then(resp => {
-          this.bar2 = resp.data
-        });
-
-      Axios.get('./data/kidney/pie1.json')
-        .then(resp => {
-          this.pie1 = resp.data
-        });
-
-      Axios.get('./data/kidney/pie2.json')
-        .then(resp => {
-          this.pie2 = resp.data
-        });
-
-      Axios.get('./data/kidney/pie3.json')
-        .then(resp => {
-          this.pie3 = resp.data
-        });
+      // Axios.get('./data/kidney/bar1.json')
+      //   .then(resp => {
+      //     this.bar1 = resp.data
+      //   });
+      //
+      // Axios.get('./data/kidney/bar2.json')
+      //   .then(resp => {
+      //     this.bar2 = resp.data
+      //   });
+      //
+      // Axios.get('./data/kidney/pie1.json')
+      //   .then(resp => {
+      //     this.pie1 = resp.data
+      //   });
+      //
+      // Axios.get('./data/kidney/pie2.json')
+      //   .then(resp => {
+      //     this.pie2 = resp.data
+      //   });
+      //
+      // Axios.get('./data/kidney/pie3.json')
+      //   .then(resp => {
+      //     this.pie3 = resp.data
+      //   });
     }
   }
 </script>

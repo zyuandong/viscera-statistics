@@ -166,53 +166,616 @@
       ChartPie,
       ChartBar,
     },
+    mounted() {
+      this.bar1 = {
+        "tooltip": {},
+        "xAxis": {
+          "data": ["脾梗\n死亡例","脾梗\n治愈率","脾梗\n死亡率"],
+          "axisLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {
+            "color": "#fff",
+            "rotate": 45,
+            "align": "right"
+          }
+        },
+        "yAxis": {
+          "show": false
+        },
+        "series": [{
+          "type": "bar",
+          "barWidth": "40%",
+          "data": [{
+            "value": 137,
+            "itemStyle": {
+              "color": "#ead84c",
+              "barBorderRadius": 3
+            },
+            "label": {
+              "show": true,
+              "color": "#fff",
+              "position": "top"
+            }
+          }, {
+            "value": 88.7,
+            "itemStyle": {
+              "color": "#2ec7c9",
+              "barBorderRadius": 3
+            },
+            "label": {
+              "show": true,
+              "color": "#fff",
+              "position": "top"
+            }
+          }, {
+            "value": 11.3,
+            "itemStyle": {
+              "color": "#2ec7c9",
+              "barBorderRadius": 3
+            },
+            "label": {
+              "show": true,
+              "color": "#fff",
+              "position": "top"
+            }
+          }]
+        }]
+      };
+      this.bar2 = {
+        "title": {
+          "text": "脾梗病发占比",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "top": "5%",
+          "right": "20%"
+        },
+        "tooltip": {},
+        "xAxis": {
+          "data": ["循环系统\n疾病","血液系统\n疾病","消化系统\n疾病","自身免疫系统\n疾病","感染系统\n疾病"],
+          "axisLine": {
+            "lineStyle": {
+              "color": "#fff"
+            }
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {
+            "rotate": 45
+          }
+        },
+        "yAxis": {
+          "axisLine": {
+            "lineStyle": {
+              "color": "#fff"
+            }
+          },
+          "splitLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          }
+        },
+        "series": [{
+          "type": "bar",
+          "data": [29.8, 21.4, 21.4, 5.3, 6.1],
+          "barWidth": "40%",
+          "itemStyle": {
+            "normal": {
+              "color": "#51a3a3",
+              "barBorderRadius": 3
+            }
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "color": "#fff",
+            "formatter": "{c}%"
+          }
+        }]
+      };
+      this.bar3 = {
+        "title": {
+          "text": "脾梗男女占比",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "top": "5%",
+          "left": 60
+        },
+        "tooltip": {},
+        "xAxis": {
+          "data": ["男","女"],
+          "axisLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {
+            "color": "#fff"
+          }
+        },
+        "yAxis": {
+          "show": false
+        },
+        "series": [{
+          "type": "bar",
+          "data": [85, 52],
+          "barWidth": "40%",
+          "itemStyle": {
+            "color": "#51a3a3",
+            "barBorderRadius": 3
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "color": "#fff",
+            "formatter": "{c}人"
+          }
+        }]
+      };
+      this.bar4 = {
+        "tooltip": {},
+        "xAxis": {
+          "type": "value",
+          "show": false
+        },
+        "grid": {
+          "left": 70
+        },
+        "yAxis": {
+          "type": "category",
+          "inverse": true,
+          "data": ["腹痛","左上腹疼痛","发热","恶心呕吐","反射疼痛"],
+          "axisLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {
+            "color": "#fff"
+          }
+        },
+        "series": [{
+          "type": "bar",
+          "barWidth": "40%",
+          "data": [80.7, 19.3, 53.8, 32.9, 30.1],
+          "itemStyle": {
+            "color": "#51a3a3",
+            "barBorderRadius": 3
+          },
+          "label": {
+            "show": true,
+            "position": "right",
+            "color": "#fff",
+            "formatter": "{c}%"
+          }
+        }]
+      };
+      this.bar5 = {
+        "tooltip": {},
+        "xAxis": {
+          "type": "value",
+          "show": false
+        },
+        "grid": {
+          "left": 70
+        },
+        "yAxis": {
+          "type": "category",
+          "inverse": true,
+          "data": ["左上腹压痛","腹肌紧张","腹膜刺激征","腹部肿块"],
+          "axisLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {
+            "color": "#fff"
+          }
+        },
+        "series": [{
+          "type": "bar",
+          "barWidth": "40%",
+          "data": [35.7, 33.7, 28.4, 48.6],
+          "itemStyle": {
+            "color": "#51a3a3",
+            "barBorderRadius": 3
+          },
+          "label": {
+            "show": true,
+            "position": "right",
+            "color": "#fff",
+            "formatter": "{c}%"
+          }
+        }]
+      };
+      this.pie1 = {
+        "title": {
+          "text": "最大免疫系统\n占淋巴组织总量",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 14,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "right": 20,
+          "bottom": 0
+        },
+        "grid": {
+          "top": 0
+        },
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend":{
+          "show": false,
+          "orient":"vertical",
+          "x":"left",
+          "data":[
+            "直接访问"
+          ]
+        },
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":[
+              "70%",
+              "80%"
+            ],
+            "avoidLabelOverlap":false,
+            "label":{
+              "normal":{
+                "show":false,
+                "position":"center"
+              },
+              "emphasis":{
+                "show":true,
+                "textStyle":{
+                  "fontSize":"30",
+                  "fontWeight":"bold"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "show":false
+              }
+            },
+            "data":[
+              {
+                "value":25,
+                "itemStyle": {
+                  "color": "#db2828"
+                }
+              },{
+                "value":75,
+                "itemStyle": {
+                  "color": "#033348"
+                }
+              }
+            ]
+          }
+        ]
+      };
+      this.pie2 = {
+        "title": {
+          "text": "年龄最小",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 12,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "bottom": 0,
+          "left": "45%",
+          "right": 20
+        },
+        "grid": {
+          "top": 10,
+          "bottom": 30
+        },
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend":{
+          "show": false,
+          "orient":"vertical",
+          "x":"left"
+        },
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":[
+              "70%",
+              "80%"
+            ],
+            "avoidLabelOverlap":false,
+            "label":{
+              "normal":{
+                "show":false,
+                "position":"center"
+              },
+              "emphasis":{
+                "show":true,
+                "textStyle":{
+                  "fontSize":"30",
+                  "fontWeight":"bold"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "show":false
+              }
+            },
+            "data":[
+              {
+                "value":10,
+                "itemStyle": {
+                  "color": "#033348"
+                }
+              }
+            ]
+          }
+        ]
+      };
+      this.pie3 = {
+        "title": {
+          "text": "平均病发年龄",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 12,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "bottom": 0,
+          "left": "45%",
+          "right": 20
+        },
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend":{
+          "show": false,
+          "orient":"vertical",
+          "x":"left"
+        },
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":[
+              "70%",
+              "80%"
+            ],
+            "avoidLabelOverlap":false,
+            "label":{
+              "normal":{
+                "show":false,
+                "position":"center"
+              },
+              "emphasis":{
+                "show":true,
+                "textStyle":{
+                  "fontSize":"30",
+                  "fontWeight":"bold"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "show":false
+              }
+            },
+            "data":[
+              {
+                "value":54.1,
+                "itemStyle": {
+                  "color": "#033348"
+                }
+              }
+            ]
+          }
+        ]
+      };
+      this.pie4 = {
+        "title": {
+          "text": "年龄最大",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 12,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "bottom": 0,
+          "left": "45%",
+          "right": 20
+        },
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend":{
+          "show": false,
+          "orient":"vertical",
+          "x":"left"
+        },
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":[
+              "70%",
+              "80%"
+            ],
+            "avoidLabelOverlap":false,
+            "label":{
+              "normal":{
+                "show":false,
+                "position":"center"
+              },
+              "emphasis":{
+                "show":true,
+                "textStyle":{
+                  "fontSize":"30",
+                  "fontWeight":"bold"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "show":false
+              }
+            },
+            "data":[
+              {
+                "value":83,
+                "itemStyle": {
+                  "color": "#033348"
+                }
+              }
+            ]
+          }
+        ]
+      };
+      this.pie5 = {
+        "title": {
+          "text": ">=60岁占比",
+          "textStyle": {
+            "color": "#fff",
+            "fontSize": 12,
+            "fontWeight": 400
+          },
+          "textAlign": "center",
+          "bottom": 0,
+          "left": "45%",
+          "right": 20
+        },
+        "grid": {
+          "top": 0,
+          "bottom": 50
+        },
+        "tooltip":{
+          "trigger":"item",
+          "formatter":"{a} <br/>{b}: {c} ({d}%)"
+        },
+        "legend":{
+          "show": false,
+          "orient":"vertical",
+          "x":"left"
+        },
+        "series":[
+          {
+            "name":"访问来源",
+            "type":"pie",
+            "radius":[
+              "70%",
+              "80%"
+            ],
+            "avoidLabelOverlap":false,
+            "label":{
+              "normal":{
+                "show":false,
+                "position":"center"
+              },
+              "emphasis":{
+                "show":true,
+                "textStyle":{
+                  "fontSize":"30",
+                  "fontWeight":"bold"
+                }
+              }
+            },
+            "labelLine":{
+              "normal":{
+                "show":false
+              }
+            },
+            "data":[
+              {
+                "value":27.7,
+                "itemStyle": {
+                  "color": "#e8ff00"
+                }
+              },{
+                "value":72.3,
+                "itemStyle": {
+                  "color": "#033348"
+                }
+              }
+            ]
+          }
+        ]
+      };
+    },
     created() {
-      Axios.get('./data/spleen/pie1.json')
-        .then(resp => {
-          this.pie1 = resp.data;
-        });
-
-      Axios.get('./data/spleen/bar1.json')
-        .then(resp => {
-          this.bar1 = resp.data;
-        });
-
-      Axios.get('./data/spleen/bar2.json')
-        .then(resp => {
-          this.bar2 = resp.data;
-        });
-      Axios.get('./data/spleen/bar3.json')
-        .then(resp => {
-          this.bar3 = resp.data;
-        });
-      Axios.get('./data/spleen/bar4.json')
-        .then(resp => {
-          this.bar4 = resp.data;
-        });
-      Axios.get('./data/spleen/bar5.json')
-        .then(resp => {
-          this.bar5 = resp.data;
-        });
-
-      Axios.get('./data/spleen/pie2.json')
-        .then(resp => {
-          this.pie2 = resp.data;
-        });
-
-      Axios.get('./data/spleen/pie3.json')
-        .then(resp => {
-          this.pie3 = resp.data;
-        });
-
-      Axios.get('./data/spleen/pie4.json')
-        .then(resp => {
-          this.pie4 = resp.data;
-        });
-
-      Axios.get('./data/spleen/pie5.json')
-        .then(resp => {
-          this.pie5 = resp.data;
-        });
+      // Axios.get('./data/spleen/pie1.json')
+      //   .then(resp => {
+      //     this.pie1 = resp.data;
+      //   });
+      //
+      // Axios.get('./data/spleen/bar1.json')
+      //   .then(resp => {
+      //     this.bar1 = resp.data;
+      //   });
+      //
+      // Axios.get('./data/spleen/bar2.json')
+      //   .then(resp => {
+      //     this.bar2 = resp.data;
+      //   });
+      // Axios.get('./data/spleen/bar3.json')
+      //   .then(resp => {
+      //     this.bar3 = resp.data;
+      //   });
+      // Axios.get('./data/spleen/bar4.json')
+      //   .then(resp => {
+      //     this.bar4 = resp.data;
+      //   });
+      // Axios.get('./data/spleen/bar5.json')
+      //   .then(resp => {
+      //     this.bar5 = resp.data;
+      //   });
+      //
+      // Axios.get('./data/spleen/pie2.json')
+      //   .then(resp => {
+      //     this.pie2 = resp.data;
+      //   });
+      //
+      // Axios.get('./data/spleen/pie3.json')
+      //   .then(resp => {
+      //     this.pie3 = resp.data;
+      //   });
+      //
+      // Axios.get('./data/spleen/pie4.json')
+      //   .then(resp => {
+      //     this.pie4 = resp.data;
+      //   });
+      //
+      // Axios.get('./data/spleen/pie5.json')
+      //   .then(resp => {
+      //     this.pie5 = resp.data;
+      //   });
     }
   }
 </script>

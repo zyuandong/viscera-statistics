@@ -42,6 +42,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "echarts": "^4.2.1",
+    "jsonp": "^0.2.1",
     "vue": "^2.6.10"
   }
 }
