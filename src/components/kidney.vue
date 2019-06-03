@@ -48,13 +48,13 @@
         </div>
 
         <div class="clearfix">
-          <div class="pull-left">慢性肾脏病分期</div>
-          <div class="pull-left">
-
+          <div class="pull-left" style="font-size: 16px; color:#2ec7c9; padding: 30px 0 0;">慢性肾脏病分期</div>
+          <div class="pull-left" style="padding: 0 0 0 50px;">
+            <img src="./../assets/images/kidney/kidney-disease-section.png" alt="" style="width: 90%">
           </div>
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix" style="padding: 20px 0 10px;">
           <div class="part-title">第一部分，慢性肾脏病</div>
         </div>
 
@@ -91,27 +91,63 @@
             <div class="title">不同病因的高发省份（TOP3）</div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">糖尿病肾病</div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
+              <div class="pull-left" style="width:33.33%">
+                青海
+                <img src="./../assets/images/kidney/qinghai.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                甘肃
+                <img src="./../assets/images/kidney/gansu.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                黑龙江
+                <img src="./../assets/images/kidney/heilongjiang.png" alt="">
+              </div>
             </div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">梗阻性肾病</div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
+              <div class="pull-left" style="width:33.33%">
+                江西
+                <img src="./../assets/images/kidney/jiangxi.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                广西
+                <img src="./../assets/images/kidney/guangxi.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                广东
+                <img src="./../assets/images/kidney/guangdong.png" alt="">
+              </div>
             </div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">高血压肾病</div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
+              <div class="pull-left" style="width:33.33%">
+                上海
+                <img src="./../assets/images/kidney/shanghai.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                湖北
+                <img src="./../assets/images/kidney/hubei.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                重庆
+                <img src="./../assets/images/kidney/chongqing.png" alt="">
+              </div>
             </div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">肾小球肾病</div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
-              <div class="pull-left" style="width:33.33%"></div>
+              <div class="pull-left" style="width:33.33%">
+                宁夏
+                <img src="./../assets/images/kidney/ningxia.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                湖北
+                <img src="./../assets/images/kidney/hubei.png" alt="">
+              </div>
+              <div class="pull-left" style="width:33.33%">
+                西藏
+                <img src="./../assets/images/kidney/xizang.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -587,3 +623,14 @@
     }
   }
 </script>
+
+<style lang="scss">
+  #kidney {
+    .part-title {
+      display: inline-block;
+      padding: 2px 10px;
+      background-color: #2ec7c9;
+      border-radius: 3px;
+    }
+  }
+</style>
