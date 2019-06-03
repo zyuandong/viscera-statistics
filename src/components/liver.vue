@@ -29,7 +29,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/red50.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/redTip.png" alt="">
               </span>
               <span class="progress-box red">
                 <span class="bar" style="width: 0%"></span>
@@ -39,7 +39,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/red49.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/redTip.png" alt="">
               </span>
               <span class="progress-box red">
                 <span class="bar" style="width:56%"></span>
@@ -49,7 +49,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/red24.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/redTip.png" alt="">
               </span>
               <span class="progress-box red">
                 <span class="bar" style="width:37%"></span>
@@ -59,7 +59,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/red18.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/redTip.png" alt="">
               </span>
               <span class="progress-box red">
                 <span class="bar" style="width:7%"></span>
@@ -79,7 +79,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/blue50.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/blueTip.png" alt="">
               </span>
               <span class="progress-box blue">
                 <span class="bar" style="width:2%"></span>
@@ -89,7 +89,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/blue49.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/blueTip.png" alt="">
               </span>
               <span class="progress-box blue">
                 <span class="bar" style="width:63%"></span>
@@ -99,7 +99,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/blue24.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/blueTip.png" alt="">
               </span>
               <span class="progress-box blue">
                 <span class="bar" style="width:28%"></span>
@@ -109,7 +109,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/blue18.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/blueTip.png" alt="">
               </span>
               <span class="progress-box blue">
                 <span class="bar" style="width:6%"></span>
@@ -129,7 +129,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/green50.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/greenTip.png" alt="">
               </span>
               <span class="progress-box green">
                 <span class="bar" style="width:1%"></span>
@@ -139,7 +139,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/green49.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/greenTip.png" alt="">
               </span>
               <span class="progress-box green">
                 <span class="bar" style="width:63%"></span>
@@ -149,7 +149,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/green24.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/greenTip.png" alt="">
               </span>
               <span class="progress-box green">
                 <span class="bar" style="width:28%"></span>
@@ -159,7 +159,7 @@
             <div class="item">
               <span class="img-box">
                 <img src="./../assets/images/liver/green18.png" alt="">
-                <img src="./../assets/images/liver/tip.png" alt="">
+                <img src="./../assets/images/liver/greenTip.png" alt="">
               </span>
               <span class="progress-box green">
                 <span class="bar" style="width:8%"></span>
