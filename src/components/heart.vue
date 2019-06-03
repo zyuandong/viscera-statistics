@@ -13,6 +13,8 @@
           <span class="main-text">心动周期</span><span class="sub-text">分析</span>
           <span class="sub-title-line w-6"></span>
         </div>
+
+        <img src="./../assets/images/heart/parallel.png" alt="" width="100%" style="padding: 40px 0 0;">
       </div>
       <div class="pull-left width-6 p-10 block-c">
         <div class="sub-title">
