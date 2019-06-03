@@ -62,11 +62,21 @@
           <div class="pull-left" style="width:33.33%">
             <div class="item">住院患者中慢性肾脏病比例</div>
             <div class="item">慢性肾脏患病率</div>
-            <div class="item">男性为主</div>
+            <div class="item">
+              <img src="./../assets/images/kidney/icon2.png" alt="">
+              男性为主
+            </div>
           </div>
           <div class="pull-left" style="width:33.33%">
-            <div class="item">慢性肾脏病患者住院费用比非患者高30%</div>
-            <div class="item">60岁以下</div>
+            <div class="item">
+              <img src="./../assets/images/kidney/icon1.png" alt="">
+              慢性肾脏病患者住院费用比非患者高30%
+            </div>
+            <div class="item">
+              <img src="./../assets/images/kidney/icon3.png" alt="">  
+              60岁以下
+            </div>
+            <img src="./../assets/images/kidney/icon4.png" alt="">
           </div>
           <div class="pull-left" style="width:33.33%">
             <ChartBar
@@ -159,11 +169,12 @@
         <div class="clearfix">
           <div class="pull-left" style="width:25%">
             <div class="clearfix">
-              <img src="" alt="">
+              <img src="./../assets/images/kidney/icon5.png" alt="">
               血透
             </div>
             <div class="clearfix">
               <div class="pull-left" style="width:50%">
+                <img src="./../assets/images/kidney/icon8.png" alt="">
                 <div class="num">553000</div>
                 <div class="text">患者人数</div>
               </div>
@@ -175,11 +186,12 @@
           </div>
           <div class="pull-left" style="width:25%">
             <div class="clearfix">
-              <img src="" alt="">
+              <img src="./../assets/images/kidney/icon6.png" alt="">
               腹透
             </div>
             <div class="clearfix">
               <div class="pull-left" style="width:50%">
+                <img src="./../assets/images/kidney/icon8.png" alt="">
                 <div class="num">55000</div>
                 <div class="text">患者人数</div>
               </div>
@@ -191,7 +203,7 @@
           </div>
           <div class="pull-left" style="width:25%">
             <div class="clearfix">
-              <img src="" alt="">
+              <img src="./../assets/images/kidney/icon7.png" alt="">
             </div>
             <div class="clearfix">
               <div class="num">122.19</div>
@@ -200,21 +212,27 @@
           </div>
           <div class="pull-left" style="width:25%">
             <div class="item clearfix">
-              <div class="pull-left" style="width:25%"></div>
+              <div class="pull-left" style="width:25%">
+                <img src="./../assets/images/kidney/icon9.png" alt="">
+              </div>
               <div class="pull-left" style="width:25%">18-44岁</div>
               <div class="pull-left" style="width:25%">11.80</div>
               <div class="pull-left" style="width:25%"></div>
             </div>
 
             <div class="item clearfix">
-              <div class="pull-left" style="width:25%"></div>
+              <div class="pull-left" style="width:25%">
+                <img src="./../assets/images/kidney/icon10.png" alt="">
+              </div>
               <div class="pull-left" style="width:25%">45-64岁</div>
               <div class="pull-left" style="width:25%">31.57</div>
               <div class="pull-left" style="width:25%"></div>
             </div>
 
             <div class="item clearfix">
-              <div class="pull-left" style="width:25%"></div>
+              <div class="pull-left" style="width:25%">
+                <img src="./../assets/images/kidney/icon11.png" alt="">
+              </div>
               <div class="pull-left" style="width:25%">>=65岁</div>
               <div class="pull-left" style="width:25%">91.69</div>
               <div class="pull-left" style="width:25%"></div>
