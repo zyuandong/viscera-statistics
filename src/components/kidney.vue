@@ -59,26 +59,61 @@
         </div>
 
         <div class="clearfix">
-          <div class="pull-left" style="width:33.33%">
-            <div class="item">住院患者中慢性肾脏病比例</div>
-            <div class="item">慢性肾脏患病率</div>
-            <div class="item">
-              <img src="./../assets/images/kidney/icon2.png" alt="">
-              男性为主
+          <div class="pull-left" style="width:30%">
+            <div class="item ">
+              <div class="pull-left"
+                   style="width: 50px;height:15px;background-color: #51a3a3;border-radius: 3px;margin:21px 0 0;"></div>
+              <div class="pull-left" style="margin:0 0 0 20px;">
+                <div class="num" style="color:#51a3a3; font-size: 28px;">4.8%</div>
+                <div class="text">住院患者中慢性肾脏病比例</div>
+              </div>
+            </div>
+            <div class="item clearfix">
+              <div class="pull-left"
+                   style="width: 100px;height:15px;background-color: #ead84c;border-radius: 3px;margin:21px 0 0;"></div>
+              <div class="pull-left" style="margin:0 0 0 20px;">
+                <div class="num" style="color:#ead84c; font-size: 28px;">10.8%</div>
+                <div class="text">慢性肾脏患病率</div>
+              </div>
+            </div>
+            <div class="item clearfix">
+              <div class="pull-left"
+                   style="margin:10px 0 0;">
+                <img src="./../assets/images/kidney/icon2.png" alt="">
+              </div>
+              <div class="pull-left" style="margin:0 0 0 20px;">
+                <div class="num" style="color:#51a3a3; font-size: 28px;">58.9%</div>
+                <div class="text">男性为主</div>
+              </div>
             </div>
           </div>
-          <div class="pull-left" style="width:33.33%">
-            <div class="item">
-              <img src="./../assets/images/kidney/icon1.png" alt="">
-              慢性肾脏病患者住院费用比非患者高30%
+          <div class="pull-left" style="width:21%">
+            <div class="item" style="padding: 20px 0;">
+              <div class="pull-left"
+                   style="margin:20px 0 0;">
+                <img src="./../assets/images/kidney/icon1.png" alt="" width="42px">
+              </div>
+              <div class="pull-left" style="margin:0 0 0 20px;">
+                <div class="num" style="color:#51a3a3; font-size: 28px;">30%</div>
+                <div class="text" style="width: 115px;">慢性肾脏病患者住院费用比非患者高30%</div>
+              </div>
             </div>
-            <div class="item">
-              <img src="./../assets/images/kidney/icon3.png" alt="">  
-              60岁以下
+
+            <div class="item clearfix" style="padding: 20px 0;">
+              <div class="pull-left"
+                   style="margin:10px 0 0;">
+                <img src="./../assets/images/kidney/icon3.png" alt="">
+              </div>
+              <div class="pull-left" style="margin:0 0 0 20px;">
+                <div class="num" style="color:#51a3a3; font-size: 28px;">> 50%</div>
+                <div class="text">60岁以下</div>
+              </div>
             </div>
-            <img src="./../assets/images/kidney/icon4.png" alt="">
           </div>
-          <div class="pull-left" style="width:33.33%">
+          <div class="pull-left" style="width:16%;text-align: right">
+            <img src="./../assets/images/kidney/icon4.png" alt="" width="110">
+          </div>
+          <div class="pull-left" style="width:33%">
             <ChartBar
               :id="'bar2'"
               :width=200
@@ -88,75 +123,99 @@
           </div>
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix" style="padding: 20px 0 0;">
           <div class="pull-left" style="width:28%">
             <ChartPie
               :id="'pie3'"
               :width=300
-              :height=300
+              :height=250
               :data="pie3"
             ></ChartPie>
           </div>
-          <div class="pull-left" style="width:72%">
-            <div class="title">不同病因的高发省份（TOP3）</div>
+          <div class="pull-left province-top3" style="width:72%">
+            <div class="title" style="font-size: 16px; color:#2ec7c9;">不同病因的高发省份（TOP3）</div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">糖尿病肾病</div>
               <div class="pull-left" style="width:33.33%">
-                青海
-                <img src="./../assets/images/kidney/qinghai.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/qinghai.png" alt="">
+                </div>
+                <div class="text">青海</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                甘肃
-                <img src="./../assets/images/kidney/gansu.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/gansu.png" alt="">
+                </div>
+                <div class="text">甘肃</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                黑龙江
-                <img src="./../assets/images/kidney/heilongjiang.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/heilongjiang.png" alt="">
+                </div>
+                <div class="text">黑龙江</div>
               </div>
             </div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">梗阻性肾病</div>
               <div class="pull-left" style="width:33.33%">
-                江西
-                <img src="./../assets/images/kidney/jiangxi.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/jiangxi.png" alt="" style="">
+                </div>
+                <div class="text">江西</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                广西
-                <img src="./../assets/images/kidney/guangxi.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/guangxi.png" alt="">
+                </div>
+                <div class="text">广西</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                广东
-                <img src="./../assets/images/kidney/guangdong.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/guangdong.png" alt="">
+                </div>
+                <div class="text">广东</div>
               </div>
             </div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">高血压肾病</div>
               <div class="pull-left" style="width:33.33%">
-                上海
-                <img src="./../assets/images/kidney/shanghai.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/shanghai.png" alt="">
+                </div>
+                <div class="text">上海</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                湖北
-                <img src="./../assets/images/kidney/hubei.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/hubei.png" alt="">
+                </div>
+                <div class="text">湖北</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                重庆
-                <img src="./../assets/images/kidney/chongqing.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/chongqing.png" alt="">
+                </div>
+                <div class="text">重庆</div>
               </div>
             </div>
             <div class="pull-left" style="width:25%">
               <div class="item-title">肾小球肾病</div>
               <div class="pull-left" style="width:33.33%">
-                宁夏
-                <img src="./../assets/images/kidney/ningxia.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/ningxia.png" alt="">
+                </div>
+                <div class="text">宁夏</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                湖北
-                <img src="./../assets/images/kidney/hubei.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/hubei.png" alt="">
+                </div>
+                <div class="text">湖北</div>
               </div>
               <div class="pull-left" style="width:33.33%">
-                西藏
-                <img src="./../assets/images/kidney/xizang.png" alt="">
+                <div class="img">
+                  <img src="./../assets/images/kidney/xizang.png" alt="">
+                </div>
+                <div class="text">西藏</div>
               </div>
             </div>
           </div>
@@ -174,9 +233,13 @@
             </div>
             <div class="clearfix">
               <div class="pull-left" style="width:50%">
-                <img src="./../assets/images/kidney/icon8.png" alt="">
-                <div class="num">553000</div>
-                <div class="text">患者人数</div>
+                <div class="img pull-left" style="width: 50%">
+                  <img src="./../assets/images/kidney/icon8.png" alt="">
+                </div>
+                <div class="img pull-left" style="width: 50%">
+                  <div class="num">553000</div>
+                  <div class="text">患者人数</div>
+                </div>
               </div>
               <div class="pull-left" style="width:50%">
                 <div class="num">402.18</div>
@@ -191,9 +254,13 @@
             </div>
             <div class="clearfix">
               <div class="pull-left" style="width:50%">
-                <img src="./../assets/images/kidney/icon8.png" alt="">
-                <div class="num">55000</div>
-                <div class="text">患者人数</div>
+                <div class="img pull-left" style="width: 50%">
+                  <img src="./../assets/images/kidney/icon8.png" alt="">
+                </div>
+                <div class="img pull-left" style="width: 50%">
+                  <div class="num">55000</div>
+                  <div class="text">患者人数</div>
+                </div>
               </div>
               <div class="pull-left" style="width:50%">
                 <div class="num">39.95</div>
@@ -649,6 +716,21 @@
       padding: 2px 10px;
       background-color: #2ec7c9;
       border-radius: 3px;
+    }
+
+    .province-top3 {
+      .item-title {
+        padding: 20px 0 10px;
+      }
+      .img {
+        margin: 10px 0 0;
+        line-height: 70px;
+        height: 60px;
+        text-align: center;
+      }
+      .text {
+        text-align: center;
+      }
     }
   }
 </style>
