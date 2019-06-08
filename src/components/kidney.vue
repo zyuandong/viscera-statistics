@@ -225,51 +225,51 @@
           <div class="part-title">第二部分，终末期肾脏病</div>
         </div>
 
-        <div class="clearfix">
+        <div class="clearfix part-2">
           <div class="pull-left" style="width:25%">
-            <div class="clearfix">
+            <div class="clearfix row">
               <img src="./../assets/images/kidney/icon5.png" alt="">
-              血透
+              <span class="text">血透</span>
             </div>
-            <div class="clearfix">
+            <div class="clearfix row-2">
               <div class="pull-left" style="width:50%">
                 <div class="img pull-left" style="width: 50%">
                   <img src="./../assets/images/kidney/icon8.png" alt="">
                 </div>
-                <div class="img pull-left" style="width: 50%">
+                <div class="pull-left col-2" style="width: 50%">
                   <div class="num">553000</div>
                   <div class="text">患者人数</div>
                 </div>
               </div>
-              <div class="pull-left" style="width:50%">
+              <div class="pull-left col-3" style="width:50%">
                 <div class="num">402.18</div>
                 <div class="text">患病率（百万）</div>
               </div>
             </div>
           </div>
           <div class="pull-left" style="width:25%">
-            <div class="clearfix">
+            <div class="clearfix row">
               <img src="./../assets/images/kidney/icon6.png" alt="">
-              腹透
+              <span class="text">腹透</span>
             </div>
-            <div class="clearfix">
+            <div class="clearfix row-2">
               <div class="pull-left" style="width:50%">
                 <div class="img pull-left" style="width: 50%">
                   <img src="./../assets/images/kidney/icon8.png" alt="">
                 </div>
-                <div class="img pull-left" style="width: 50%">
+                <div class="pull-left col-2" style="width: 50%">
                   <div class="num">55000</div>
                   <div class="text">患者人数</div>
                 </div>
               </div>
-              <div class="pull-left" style="width:50%">
+              <div class="pull-left col-3" style="width:50%">
                 <div class="num">39.95</div>
                 <div class="text">患病率（百万）</div>
               </div>
             </div>
           </div>
           <div class="pull-left" style="width:25%">
-            <div class="clearfix">
+            <div class="clearfix row">
               <img src="./../assets/images/kidney/icon7.png" alt="">
             </div>
             <div class="clearfix">
@@ -277,13 +277,13 @@
               <div class="text">透析患者发病率（百万）</div>
             </div>
           </div>
-          <div class="pull-left" style="width:25%">
+          <div class="pull-left col-4" style="width:25%">
             <div class="item clearfix">
               <div class="pull-left" style="width:25%">
                 <img src="./../assets/images/kidney/icon9.png" alt="">
               </div>
               <div class="pull-left" style="width:25%">18-44岁</div>
-              <div class="pull-left" style="width:25%">11.80</div>
+              <div class="pull-left num" style="width:25%">11.80</div>
               <div class="pull-left" style="width:25%"></div>
             </div>
 
@@ -292,7 +292,7 @@
                 <img src="./../assets/images/kidney/icon10.png" alt="">
               </div>
               <div class="pull-left" style="width:25%">45-64岁</div>
-              <div class="pull-left" style="width:25%">31.57</div>
+              <div class="pull-left num" style="width:25%">31.57</div>
               <div class="pull-left" style="width:25%"></div>
             </div>
 
@@ -301,8 +301,8 @@
                 <img src="./../assets/images/kidney/icon11.png" alt="">
               </div>
               <div class="pull-left" style="width:25%">>=65岁</div>
-              <div class="pull-left" style="width:25%">91.69</div>
-              <div class="pull-left" style="width:25%"></div>
+              <div class="pull-left num" style="width:25%">91.69</div>
+              <div class="pull-left" style="width:25%">死亡率</div>
             </div>
           </div>
         </div>
@@ -730,6 +730,57 @@
       }
       .text {
         text-align: center;
+      }
+    }
+
+    .part-2 {
+
+      .num {
+        color: #2ec7c9;
+      }
+
+      .row {
+        height: 95px;
+        padding: 30px 0;
+
+        img {
+          height: 40px;
+          float: left;
+          clear: both;
+        }
+        .text {
+          display: inline-block;
+          line-height: 40px;
+          margin: 0 0 0 20px;
+        }
+      }
+
+      .row-2 {
+        img {
+          height: 35px;
+        }
+
+        .col-2 {
+          border-right: 1px solid #fff;
+        }
+
+        .col-3 {
+          padding: 0 0 0 5px;
+        }
+      }
+
+      .col-4 {
+        img {
+          width: 30px;
+        }
+
+        .item {
+          height: 40px;
+
+          div {
+            line-height: 40px;
+          }
+        }
       }
     }
   }
