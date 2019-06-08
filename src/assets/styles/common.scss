@@ -64,6 +64,7 @@ html,body {
     padding: 10px 100px;
     border: 1px solid #3d83a7;
     position: relative;
+    z-index: 999;
 
     &:after {
       display: inline-block;
@@ -81,10 +82,14 @@ html,body {
     height: 480px;
     text-align: center;
     margin: -80px auto 0;
+    position: relative;
 
     img {
       width: 100%;
       max-width: 500px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
     }
   }
 

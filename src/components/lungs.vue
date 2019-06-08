@@ -1001,7 +1001,7 @@
       border-top: 1px solid #fff;
 
       .text-box {
-        height: 50px;
+        height: 30px;
       }
       .text {
         display: inline-block;
