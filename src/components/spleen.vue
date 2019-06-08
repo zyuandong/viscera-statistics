@@ -167,6 +167,11 @@
       ChartBar,
     },
     mounted() {
+      if (this.$route.meta.isRedirect) {
+        setTimeout(() => {
+          this.$router.push('/lungs')
+        }, 5000)
+      }
       this.bar1 = {
         "tooltip": {},
         "xAxis": {

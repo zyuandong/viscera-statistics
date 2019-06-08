@@ -331,6 +331,11 @@
       ChartPie,
     },
     mounted() {
+      if (this.$route.meta.isRedirect) {
+        setTimeout(() => {
+          this.$router.push('/home')
+        }, 5000)
+      }
       this.bar1 = {
         "tooltip": {},
         "xAxis": {

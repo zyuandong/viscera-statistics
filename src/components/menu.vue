@@ -39,6 +39,18 @@
   </div>
 </template>
 
+<script>
+  export default {
+    mounted() {
+      if (this.$route.meta.isRedirect) {
+        setTimeout(() => {
+          this.$router.push('/heart')
+        }, 5000)
+      }
+    }
+  }
+</script>
+
 <style lang="scss">
   #menu {
     .logo {

@@ -11,48 +11,71 @@ import Kidney from '../components/kidney.vue';
 
 Vue.use(VueRouter);
 
+const isRedirect = true;
+
 const routes = [{
   path: '/',
   redirect: '/home'
 },{
   name: 'home',
   path: '/home',
+  meta: {
+    isRedirect: isRedirect
+  },
   components: {
     fullScreen: Index
   }
 },{
   name: 'menu',
   path: '/menu',
+  meta: {
+    isRedirect: isRedirect
+  },
   components: {
     fullScreen: Menu
   }
 },{
   name: 'heart',
   path: '/heart',
+  meta: {
+    isRedirect: isRedirect
+  },
   components: {
     fullScreen: Heart
   }
 },{
   name: 'liver',
   path: '/liver',
+  meta: {
+    isRedirect: isRedirect
+  },
   components: {
     fullScreen: Liver
   }
 },{
   name: 'spleen',
   path: '/spleen',
+  meta: {
+    isRedirect: isRedirect
+  },
   components: {
     fullScreen: Spleen
   }
 },{
   name: 'lungs',
   path: '/lungs',
+  meta: {
+    isRedirect: isRedirect
+  },
   components: {
     fullScreen: Lungs
   }
 },{
   name: 'kidney',
   path: '/kidney',
+  meta: {
+    isRedirect: isRedirect
+  },
   components: {
     fullScreen: Kidney
   }

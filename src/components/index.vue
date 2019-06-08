@@ -10,6 +10,11 @@
 <script>
   export default {
     mounted() {
+      if (this.$route.meta.isRedirect) {
+        setTimeout(() => {
+          this.$router.push('/menu')
+        }, 5000)
+      }
       console.log(document.getElementById('canvas'));
       (function () {
         var canvasEl = document.getElementById('canvas');

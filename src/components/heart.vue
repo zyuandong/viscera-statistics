@@ -254,6 +254,11 @@
     mounted() {
       console.log(2);
 
+      if (this.$route.meta.isRedirect) {
+        setTimeout(() => {
+          this.$router.push('/liver')
+        }, 5000)
+      }
       this.bar1 = {
         "title": {
           "text": "男性心率/分钟",

@@ -209,6 +209,11 @@
       ChartRadar
     },
     mounted() {
+      if (this.$route.meta.isRedirect) {
+        setTimeout(() => {
+          this.$router.push('/kidney')
+        }, 5000)
+      }
       this.bar1 = {
         "title": {
           "text": "男性死亡率TOP10",
