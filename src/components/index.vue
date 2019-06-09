@@ -1,8 +1,9 @@
 <template>
   <div id="index">
-    <canvas height="620" width="1360" id="canvas"></canvas>
     <router-link to="/menu" class="btn-enter">
-      <img src="../assets/images/logo.png" alt="">
+
+      <canvas height="620" width="1360" id="canvas"></canvas>
+      <img src="../assets/images/logo.png" class="enter-img">
     </router-link>
   </div>
 </template>
@@ -193,7 +194,7 @@
       height: 100%;
     }
     
-    a.btn-enter {
+    .enter-img {
       position: fixed;
       left: 20px;
       bottom: 20px;

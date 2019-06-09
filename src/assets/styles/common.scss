@@ -110,7 +110,7 @@ html,body {
   .sub-title {
     clear: both;
     font-size: 20px;
-    margin: 30px 0 20px 0;
+    margin: 30px 0 5px 0;
 
     .main-text {
       color: #37fffe;
@@ -138,5 +138,14 @@ html,body {
         width: calc(100% - (241px + 6px));
       }
     }
+  }
+
+  .btn-back {
+    display: inline-block;
+    color: #b7f4f9;
+    font-size: 20px;
+    float: right;
+    padding: 1px 15px;
+    border: 1px solid #3d83a7;
   }
 }

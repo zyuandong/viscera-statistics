@@ -11,7 +11,7 @@ import Kidney from '../components/kidney.vue';
 
 Vue.use(VueRouter);
 
-const isRedirect = true;
+const isRedirect = false;
 const time = 10000;
 
 const routes = [{

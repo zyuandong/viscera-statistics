@@ -306,6 +306,12 @@
             </div>
           </div>
         </div>
+
+        <div class="clearfix">
+          <router-link to="/menu" class="btn-back">
+            返回
+          </router-link>
+        </div>
       </div>
     </div>
   </div>

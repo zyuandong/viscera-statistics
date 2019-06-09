@@ -172,6 +172,12 @@
             <div class="pull-left desc-text" style="width:50%">矿工中死于职业性肺癌占比</div>
           </div>
         </div>
+
+        <div class="clearfix">
+          <router-link to="/menu" class="btn-back">
+            返回
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
