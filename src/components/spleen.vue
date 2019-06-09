@@ -2,8 +2,9 @@
   <div id="spleen">
     <div class="clearfix">
       <div class="pull-left width-4 p-10 block-d">
-        <router-link to="/menu">
+        <router-link to="/menu" class="link-back">
           <div class="title-box">脾部数据</div>
+          <img src="./../assets/images/btn-back.png" alt="">
         </router-link>
 
         <div class="main-img-box">

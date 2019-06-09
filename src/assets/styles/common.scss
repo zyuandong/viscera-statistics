@@ -67,26 +67,50 @@ html,body {
     width: 60%;
   }
 
-  .title-box {
-    color: #b7f4f9;
+  a.link-back {
     display: inline-block;
-    font-size: 30px;
-    padding: 10px 100px;
-    border: 1px solid #3d83a7;
+    width: 420px;
+    height: 68px;
     position: relative;
     z-index: 999;
 
-    &:after {
+    .title-box {
+      color: #b7f4f9;
       display: inline-block;
-      width: 100%;
-      height: 100%;
+      font-size: 30px;
+      padding: 10px 100px;
       border: 1px solid #3d83a7;
-      content:"";
-      position: absolute;
-      left: 3px;
-      top: 3px;
+      position: relative;
+      z-index: 999;
+
+      &:after {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #3d83a7;
+        content:"";
+        position: absolute;
+        left: 3px;
+        top: 3px;
+      }
+
+
+      &+img {
+        display: none;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        z-index: 999;
+      }
+    }
+
+    &:hover {
+      img {
+        display: inline-block;
+      }
     }
   }
+
   .main-img-box {
     width: 90%;
     height: 480px;

@@ -2,8 +2,9 @@
   <div id="heart">
     <div class="clearfix">
       <div class="pull-left width-4 p-10 block-d">
-        <router-link to="/menu">
+        <router-link to="/menu" class="link-back">
           <div class="title-box">心脏数据</div>
+          <img src="./../assets/images/btn-back.png" alt="">
         </router-link>
         <div class="main-img-box">
           <img src="./../assets/images/heart/heart.png" alt="">
@@ -219,12 +220,7 @@
 
           </div>
         </div>
-
-        <div class="clearfix">
-          <router-link to="/menu" class="btn-back">
-            返回
-          </router-link>
-        </div>
+        
       </div>
     </div>
   </div>
