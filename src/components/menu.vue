@@ -3,7 +3,7 @@
     <div id="position">
       <img class="gif" src="../assets/images/menu/gif-background.gif" alt="">
 
-      <router-link to="/">
+      <router-link to="/" class="logo-link">
         <img class="logo" src="../assets/images/logo.png" alt="">
       </router-link>
 
@@ -42,12 +42,17 @@
 </template>
 
 <script>
+  let timeout = null;
   export default {
+    beforeRouteLeave (to, from, next) {
+      clearTimeout(timeout);
+      next();
+    },
     mounted() {
       if (this.$route.meta.isRedirect) {
-        setTimeout(() => {
+        timeout = setTimeout(() => {
           this.$router.push('/heart')
-        }, 5000)
+        }, this.$route.meta.time)
       }
     }
   }
@@ -55,11 +60,28 @@
 
 <style lang="scss">
   #menu {
+    //width: 1440px;
+    height: 900px;
+    position: relative;
+    top: calc((100% - 900px) / 2);
+    //left: calc((100% - 1440px) / 2);
+    /*margin: calc((100% - 900px) / 2) calc((100% - 1440px) / 2);*/
+
     .logo {
       width: 300px;
       position: fixed;
       top: 50px;
       left: 50px;
+    }
+
+    .logo-link {
+      display: inline-block;
+      width: 300px;
+      height: 145px;
+      position: fixed;
+      top: 50px;
+      left: 50px;
+      z-index: 999;
     }
 
     #position {

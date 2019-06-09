@@ -11,7 +11,8 @@ import Kidney from '../components/kidney.vue';
 
 Vue.use(VueRouter);
 
-const isRedirect = false;
+const isRedirect = true;
+const time = 10000;
 
 const routes = [{
   path: '/',
@@ -20,7 +21,8 @@ const routes = [{
   name: 'home',
   path: '/home',
   meta: {
-    isRedirect: isRedirect
+    isRedirect: isRedirect,
+    time: time
   },
   components: {
     fullScreen: Index
@@ -29,7 +31,8 @@ const routes = [{
   name: 'menu',
   path: '/menu',
   meta: {
-    isRedirect: isRedirect
+    isRedirect: isRedirect,
+    time: time
   },
   components: {
     fullScreen: Menu
@@ -38,7 +41,8 @@ const routes = [{
   name: 'heart',
   path: '/heart',
   meta: {
-    isRedirect: isRedirect
+    isRedirect: isRedirect,
+    time: time
   },
   components: {
     fullScreen: Heart
@@ -47,7 +51,8 @@ const routes = [{
   name: 'liver',
   path: '/liver',
   meta: {
-    isRedirect: isRedirect
+    isRedirect: isRedirect,
+    time: time
   },
   components: {
     fullScreen: Liver
@@ -56,7 +61,8 @@ const routes = [{
   name: 'spleen',
   path: '/spleen',
   meta: {
-    isRedirect: isRedirect
+    isRedirect: isRedirect,
+    time: time
   },
   components: {
     fullScreen: Spleen
@@ -65,7 +71,8 @@ const routes = [{
   name: 'lungs',
   path: '/lungs',
   meta: {
-    isRedirect: isRedirect
+    isRedirect: isRedirect,
+    time: time
   },
   components: {
     fullScreen: Lungs
@@ -74,7 +81,8 @@ const routes = [{
   name: 'kidney',
   path: '/kidney',
   meta: {
-    isRedirect: isRedirect
+    isRedirect: isRedirect,
+    time: time
   },
   components: {
     fullScreen: Kidney

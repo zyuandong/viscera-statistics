@@ -232,6 +232,7 @@
   import ChartBar from './charts/chartBar.vue';
   import ChartRadar from './charts/chartRadar.vue';
 
+  let timeout = null;
   export default {
     data() {
       return {
@@ -251,13 +252,17 @@
       ChartBar,
       ChartRadar,
     },
+    beforeRouteLeave (to, from, next) {
+      clearTimeout(timeout);
+      next();
+    },
     mounted() {
       console.log(2);
 
       if (this.$route.meta.isRedirect) {
-        setTimeout(() => {
+        timeout = setTimeout(() => {
           this.$router.push('/liver')
-        }, 5000)
+        }, this.$route.meta.time)
       }
       this.bar1 = {
         "title": {
@@ -1021,6 +1026,11 @@
 
 <style lang="scss">
   #heart {
+    //width: 1440px;
+    height: 900px;
+    position: relative;
+    top: calc((100% - 900px) / 2);
+    //left: calc((100% - 1440px) / 2);
 
     .radar-pie-box {
       &>div {

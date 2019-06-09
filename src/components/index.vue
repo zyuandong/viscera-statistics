@@ -8,12 +8,17 @@
 </template>
 
 <script>
+  let timeout = null;
   export default {
+    beforeRouteLeave (to, from, next) {
+      clearTimeout(timeout);
+      next();
+    },
     mounted() {
       if (this.$route.meta.isRedirect) {
-        setTimeout(() => {
+        timeout = setTimeout(() => {
           this.$router.push('/menu')
-        }, 5000)
+        }, this.$route.meta.time)
       }
       console.log(document.getElementById('canvas'));
       (function () {

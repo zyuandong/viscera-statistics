@@ -147,6 +147,7 @@
   import ChartPie from './charts/chartPie.vue';
   import ChartBar from './charts/chartBar.vue';
 
+  let timeout = null;
   export default {
     data() {
       return {
@@ -166,11 +167,15 @@
       ChartPie,
       ChartBar,
     },
+    beforeRouteLeave (to, from, next) {
+      clearTimeout(timeout);
+      next();
+    },
     mounted() {
       if (this.$route.meta.isRedirect) {
-        setTimeout(() => {
+        timeout = setTimeout(() => {
           this.$router.push('/lungs')
-        }, 5000)
+        }, this.$route.meta.time)
       }
       this.bar1 = {
         "tooltip": {},
@@ -787,6 +792,11 @@
 
 <style lang="scss">
   #spleen {
+    //width: 1440px;
+    height: 900px;
+    position: relative;
+    top: calc((100% - 900px) / 2);
+    //left: calc((100% - 1440px) / 2);
 
     .part-1 {
       .message-box {
